@@ -6,7 +6,7 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadSceneAsync("Flooded_new");
+        SceneManager.LoadSceneAsync("Lev1_House");
     }
 
     public void QuitGame()
