@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 12301092}
   - component: {fileID: 12301095}
   m_Layer: 5
-  m_Name: InputField (TMP)
+  m_Name: age
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -311,9 +311,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c7fcc0fd06a4514e8040ca889c9bcde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ageInputField: {fileID: 0}
-  gerderDropdown: {fileID: 0}
-  characterText: {fileID: 0}
+  name_input: {fileID: 0}
+  age_input: {fileID: 0}
 --- !u!1 &25600574
 GameObject:
   m_ObjectHideFlags: 0
@@ -916,7 +915,7 @@ GameObject:
   - component: {fileID: 399938362}
   - component: {fileID: 399938365}
   m_Layer: 5
-  m_Name: Dropdown
+  m_Name: gender
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1052,9 +1051,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c7fcc0fd06a4514e8040ca889c9bcde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ageInputField: {fileID: 0}
-  gerderDropdown: {fileID: 0}
-  characterText: {fileID: 0}
+  name_input: {fileID: 0}
+  age_input: {fileID: 0}
 --- !u!1 &538909964
 GameObject:
   m_ObjectHideFlags: 0
@@ -2705,9 +2703,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c7fcc0fd06a4514e8040ca889c9bcde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ageInputField: {fileID: 0}
-  gerderDropdown: {fileID: 0}
-  characterText: {fileID: 0}
+  name_input: {fileID: 0}
+  age_input: {fileID: 0}
 --- !u!1 &1262930843
 GameObject:
   m_ObjectHideFlags: 0
@@ -3866,7 +3863,7 @@ GameObject:
   - component: {fileID: 1884222284}
   - component: {fileID: 1884222283}
   m_Layer: 5
-  m_Name: InputField (TMP)
+  m_Name: name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
