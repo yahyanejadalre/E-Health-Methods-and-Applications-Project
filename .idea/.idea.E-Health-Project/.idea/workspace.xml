@@ -6,8 +6,24 @@
   <component name="ChangeListManager">
     <list default="true" id="f6104805-07a5-48ab-8154-96a2107df6c7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.E-Health-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.E-Health-Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_manager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dialogue_manager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DialogueObject.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DialogueObject/No.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DialogueObject/No.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DialogueObject/Text.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DialogueObject/Text.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DialogueObject/Yes.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DialogueObject/Yes.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Glacial_level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Glacial_level.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/DialogueObject.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/DialogueObject.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/DialogueUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/DialogueUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Response.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Response.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/ResponseHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/ResponseHandler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/TypeWriterEffect.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/TypeWriterEffect.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,10 +34,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Script/DialogueObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Response.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/ResponseHandler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/TypeWriterEffect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/NPCInteractable.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -107,7 +120,8 @@
       <updated>1699382169475</updated>
       <workItem from="1699382173463" duration="431000" />
       <workItem from="1699382640316" duration="3382000" />
-      <workItem from="1699389372523" duration="10157000" />
+      <workItem from="1699389372523" duration="10639000" />
+      <workItem from="1699430895938" duration="6453000" />
     </task>
     <servers />
   </component>
