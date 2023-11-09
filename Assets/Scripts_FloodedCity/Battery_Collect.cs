@@ -25,7 +25,7 @@ public class BatteryCollect : MonoBehaviour
     {
         if (PlayerArmature != null && Vector3.Distance(PlayerArmature.transform.position, transform.position) <= interactionDistance)
         {
-            if (Input.GetKeyDown(interactKey))
+            if (Input.GetKeyDown(interactKey) && levelStatus.collect_enable == true)
             {
                 if (levelStatus != null)
                 {
@@ -36,6 +36,7 @@ public class BatteryCollect : MonoBehaviour
 
                 // Fai scomparire l'oggetto
                 gameObject.SetActive(false);
+                // level.Status.collect_enable = false;  //Da sloccare quando si introducono dialoghi
             }
         }
     }

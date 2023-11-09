@@ -9,6 +9,7 @@ public class levelStatus : MonoBehaviour
     public Vector3 Checkpoint;
     private GameObject playerObject;
     public bool updated = false;
+    public bool collect_enable = true;
 
     void Start()
     {
