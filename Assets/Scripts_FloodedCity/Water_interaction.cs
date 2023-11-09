@@ -26,7 +26,7 @@ public class NewBehaviourScript : MonoBehaviour
 
             Debug.Log("Y Difference: " + yDifference);
 
-            if (yDifference < 0.1f)
+            if (yDifference < -0.1f)
             {
                 Debug.Log("Teleport Condition Met");
 
