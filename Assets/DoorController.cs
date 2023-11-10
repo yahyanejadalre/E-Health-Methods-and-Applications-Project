@@ -5,6 +5,7 @@ using UnityEngine;
 public class DoorController : MonoBehaviour
 {
     public float distanzaRilevamento = 2f; // Distanza a cui si attiverà l'apertura
+    public string tagPersonaggioPrincipale = "Player";
     private bool isDoorOpen = false;
 
     void Update()
