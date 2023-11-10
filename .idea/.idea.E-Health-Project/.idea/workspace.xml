@@ -7,104 +7,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f6104805-07a5-48ab-8154-96a2107df6c7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.E-Health-Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.E-Health-Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DialogueData.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DialogueData/No.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DialogueData/No.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DialogueData/Text.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DialogueData/Text.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DialogueData/Yes.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DialogueData/Yes.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Glacial_level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Glacial_level.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/NPCInteractable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/NPCInteractable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerInteract.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/PlayerInteract.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts_FloodedCity/Battery_Collect.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts_FloodedCity/Battery_Collect.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/3d.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/3d/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/3d/Materials/dla-zbr_Pol_AlbedoTransparency.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/3d/Materials/dla-zbr_Pol_AlbedoTransparency.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/3d/Materials/dla-zbr_steni_AlbedoTransparency.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/3d/Materials/dla-zbr_steni_AlbedoTransparency.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/3d/Technical laboratory designer-V1_Room.FBX" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/3d/Technical laboratory designer-V1_Room.FBX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/3d/Technical laboratory designer-V1_Room.fbm.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/3d/Technical laboratory designer-V1_Room.fbm/dla-zbr_Pol_AlbedoTransparency.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/3d/Technical laboratory designer-V1_Room.fbm/dla-zbr_Pol_AlbedoTransparency.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/3d/Technical laboratory designer-V1_Room.fbm/dla-zbr_steni_AlbedoTransparency.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/3d/Technical laboratory designer-V1_Room.fbm/dla-zbr_steni_AlbedoTransparency.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Background 1.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Background 1.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Background 1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Background 1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Materials/Floor.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Materials/Floor.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Materials/material-1.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Materials/material-1.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Materials/material-2.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Materials/material-2.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs/Lamp_1-1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs/Lamp_1-1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs/Lamp_1-3.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs/Lamp_1-3.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs/Portable_wall.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs/Portable_wall.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs/Wall_1-4.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs/Wall_1-4.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs/Wall_2-4.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs/Wall_2-4.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs/Wall_4-4.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs/Wall_4-4.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs/Wall_4-6.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs/Wall_4-6.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs/ceiling_1-2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs/ceiling_1-2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs/ceiling_2-2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs/ceiling_2-2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs/ceiling_2-6.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs/ceiling_2-6.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs/doorway_2-4.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs/doorway_2-4.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs/doorway_4-4.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs/doorway_4-4.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs/floor_4-4.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs/floor_4-4.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs/floor_4-6.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs/floor_4-6.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs/floor_6-6.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs/floor_6-6.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs/support.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Prefabs/support.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Scenes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Scenes/Technical laboratory designer-V1_Room.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Scenes/Technical laboratory designer-V1_Room.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Scenes/Technical laboratory designer-V1_Room.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Scenes/Technical laboratory designer-V1_RoomSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Scenes/Technical laboratory designer-V1_RoomSettings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Textures/Occlusion.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Textures/Occlusion.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Textures/Occlusion_0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Textures/Occlusion_0.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Textures/dla-zbr_Pol_AlbedoTransparency.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Textures/dla-zbr_Pol_AlbedoTransparency.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Textures/dla-zbr_Pol_Normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Textures/dla-zbr_Pol_Normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Textures/dla-zbr_Pol_SpecularSmoothness.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Textures/dla-zbr_Pol_SpecularSmoothness.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Textures/dla-zbr_steni_AlbedoTransparency.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Textures/dla-zbr_steni_AlbedoTransparency.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Textures/dla-zbr_steni_Emission.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Textures/dla-zbr_steni_Emission.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Textures/dla-zbr_steni_Normal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Textures/dla-zbr_steni_Normal.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Textures/dla-zbr_steni_SpecularSmoothness.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Technical laboratory designer-V1_Room/Textures/dla-zbr_steni_SpecularSmoothness.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/CollectObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/CollectObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SyntyStudios/PolygonStarter/PolygonPrototype/Materials/FX/PolygonPrototype_FX_GlowRing.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SyntyStudios/PolygonStarter/PolygonPrototype/Materials/FX/PolygonPrototype_FX_GlowRing.mat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +20,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/CollectObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ConverstaionStarter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/CollectIce.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/DisappearObject.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -202,6 +109,9 @@
       <workItem from="1699473523802" duration="2362000" />
       <workItem from="1699476426669" duration="7498000" />
       <workItem from="1699485463752" duration="748000" />
+      <workItem from="1699486465260" duration="256000" />
+      <workItem from="1699530606733" duration="5629000" />
+      <workItem from="1699560093353" duration="5045000" />
     </task>
     <servers />
   </component>
