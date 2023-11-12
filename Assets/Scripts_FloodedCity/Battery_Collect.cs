@@ -23,6 +23,7 @@ public class BatteryCollect : MonoBehaviour
         }
         textInteraction = GameObject.Find("Text_2").GetComponent<TextMeshProUGUI>();
         textInteraction.enabled = false;
+        levelStatus.collect_enable = false;
     }
 
     private void Update()
@@ -38,11 +39,12 @@ public class BatteryCollect : MonoBehaviour
                     // Incrementa il numero di batterie raccolte nello script LevelStatus
                     levelStatus.NumBatteriesCollected++;
                     levelStatus.updated = false;
+                    levelStatus.collect_enable = false;
                 }
 
                 // Fai scomparire l'oggetto
                 gameObject.SetActive(false);
-                // level.Status.collect_enable = false;  //Da sloccare quando si introducono dialoghi
+                 levelStatus.collect_enable = false;  //Da sloccare quando si introducono dialoghi
             }
         }
         else
