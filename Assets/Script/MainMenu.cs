@@ -36,6 +36,26 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         string character = "";
+        if (int.Parse(AgeInputFied.text) < 50 && GenderInputFied.text == "male")
+        {
+            character = "young man";
+        }
+        else if (int.Parse(AgeInputFied.text) < 50 && GenderInputFied.text == "female")
+        {
+            character = "young woman";
+        }
+        else if (int.Parse(AgeInputFied.text) > 50 && GenderInputFied.text == "male")
+        {
+            character = "middle aged man";
+        }
+        else if (int.Parse(AgeInputFied.text) > 50 && GenderInputFied.text == "female")
+        {
+            character = "middle aged woman";
+        }
+        else
+        {
+            character = "error";
+        }
         int AgeInputNumber = int.Parse(AgeInputFied.text);
         var NewHuman = new Human(NameInputFied.text,GenderInputFied.text,AgeInputNumber,character);
         Debug.Log("");
