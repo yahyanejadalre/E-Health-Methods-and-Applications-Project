@@ -26,34 +26,23 @@ public class Human
 
 public class MainMenu : MonoBehaviour
 {
-    public InputField NameInputFied;
-    public InputField GenderInputFied;
-    public InputField AgeInputFied;
+    public TMP_InputField NameInputFied;
+    public TMP_InputField GenderInputFied;
+    public TMP_InputField AgeInputFied;
 
     private List<Human> HumanList = new List<Human>();
     private List<InputField> InputList= new List<InputField>();
     private InputField[] Inputs;
     public void PlayGame()
     {
-        string character="";
-        if ( int.Parse(AgeInputFied.text) < 50 && GenderInputFied.ToString()=="male")
-        {
-            character = "young man";
-        }
-        else if (int.Parse(AgeInputFied.text) < 50 && GenderInputFied.ToString() == "female")
-        {
-            character = "young woman";
-        }
-        else if (int.Parse(AgeInputFied.text) > 50 && GenderInputFied.ToString() == "male")
-        {
-            character = "middle aged man";
-        }
-        else if (int.Parse(AgeInputFied.text) > 50 && GenderInputFied.ToString() == "female")
-        {
-            character = "middle aged woman";
-        }
+        string character = "";
         int AgeInputNumber = int.Parse(AgeInputFied.text);
         var NewHuman = new Human(NameInputFied.text,GenderInputFied.text,AgeInputNumber,character);
+        Debug.Log("");
+        print("name is " + NameInputFied.text);
+        print("gender is " + GenderInputFied.text);
+        print("age is "+ AgeInputNumber);
+        print("character is " + character);
 
         SceneManager.LoadSceneAsync("Lev1_House");
     }
