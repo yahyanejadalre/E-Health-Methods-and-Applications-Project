@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -6,16 +7,54 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+[System.Serializable]
+public class Human
+{
+    public string name;
+    public string gender;
+    public int age;
+    public string character;
+
+    public Human(string name, string gender, int age, string character)
+    {
+        this.name = name;
+        this.gender = gender;
+        this.age = age;
+        this.character = character;
+    }
+}
+
 public class MainMenu : MonoBehaviour
 {
-    public TMP_InputField name_input, age_input;
-    private string name;
-    private int age;
+    public InputField NameInputFied;
+    public InputField GenderInputFied;
+    public InputField AgeInputFied;
+
+    private List<Human> HumanList = new List<Human>();
+    private List<InputField> InputList= new List<InputField>();
+    private InputField[] Inputs;
     public void PlayGame()
     {
-        // name = name_input.text;
-        //age = Int32.Parse(age_input.text);
-        // Save the variables here (e.g., PlayerPrefs or a database)
+        string character="";
+        if ( int.Parse(AgeInputFied.text) < 50 && GenderInputFied.ToString()=="male")
+        {
+            character = "young man";
+        }
+        else if (int.Parse(AgeInputFied.text) < 50 && GenderInputFied.ToString() == "female")
+        {
+            character = "young woman";
+        }
+        else if (int.Parse(AgeInputFied.text) > 50 && GenderInputFied.ToString() == "male")
+        {
+            character = "middle aged man";
+        }
+        else if (int.Parse(AgeInputFied.text) > 50 && GenderInputFied.ToString() == "female")
+        {
+            character = "middle aged woman";
+        }
+        int AgeInputNumber = int.Parse(AgeInputFied.text);
+        var NewHuman = new Human(NameInputFied.text,GenderInputFied.text,AgeInputNumber,character);
+
         SceneManager.LoadSceneAsync("Lev1_House");
     }
 
