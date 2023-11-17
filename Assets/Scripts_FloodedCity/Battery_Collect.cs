@@ -10,7 +10,7 @@ public class BatteryCollect : MonoBehaviour
     private GameObject PlayerArmature; // Riferimento al GameObject del giocatore
     private GameObject levelStatusObject; // Riferimento al GameObject Level_status
     private levelStatus levelStatus; // Riferimento allo script LevelStatus
-    private TextMeshProUGUI textInteraction;
+    public bool interact = false;
 
     private void Start()
     {
@@ -21,8 +21,7 @@ public class BatteryCollect : MonoBehaviour
         {
             levelStatus = levelStatusObject.GetComponent<levelStatus>();
         }
-        textInteraction = GameObject.Find("Text_2").GetComponent<TextMeshProUGUI>();
-        textInteraction.enabled = false;
+
         levelStatus.collect_enable = false;
     }
 
@@ -30,7 +29,7 @@ public class BatteryCollect : MonoBehaviour
     {
         if (PlayerArmature != null && (Vector3.Distance(PlayerArmature.transform.position, transform.position) <= interactionDistance) && levelStatus.collect_enable == true)
         {
-            textInteraction.enabled = true;
+            interact = true;
 
             if (Input.GetKeyDown(interactKey))
             {
@@ -43,13 +42,14 @@ public class BatteryCollect : MonoBehaviour
                 }
 
                 // Fai scomparire l'oggetto
+                interact = false;
                 gameObject.SetActive(false);
-                 levelStatus.collect_enable = false;  //Da sloccare quando si introducono dialoghi
+                levelStatus.collect_enable = false;  //Da sloccare quando si introducono dialoghi
             }
         }
         else
         {
-            textInteraction.enabled = false;
+            interact = false;
         }
     }
 }

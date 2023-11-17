@@ -10,8 +10,7 @@ public class NPC_interact_text : MonoBehaviour
     private GameObject PlayerArmature; // Riferimento al GameObject del giocatore
     private GameObject levelStatusObject; // Riferimento al GameObject Level_status
     private levelStatus levelStatus; // Riferimento allo script LevelStatus
-    private TextMeshProUGUI playerInteraction;
-    private bool interacted = false;
+    public bool interact = false;
 
     private void Start()
     {
@@ -22,28 +21,28 @@ public class NPC_interact_text : MonoBehaviour
         {
             levelStatus = levelStatusObject.GetComponent<levelStatus>();
         }
-        playerInteraction = GameObject.Find("Text_3").GetComponent<TextMeshProUGUI>();
-        playerInteraction.enabled = false;
+        //playerInteraction = GameObject.Find("Text_3").GetComponent<TextMeshProUGUI>();
+        //playerInteraction.enabled = false;
     }
 
     private void Update()
     {
-        if (PlayerArmature != null && (Vector3.Distance(PlayerArmature.transform.position, transform.position) <= interactionDistance) && interacted == false)
+        if (PlayerArmature != null && (Vector3.Distance(PlayerArmature.transform.position, transform.position) <= interactionDistance))
         {
-            playerInteraction.enabled = true;
+            interact = true;
 
             if (Input.GetKeyDown(interactKey))
             {
-                interacted = true;
-                //gameObject.SetActive(false);
-                playerInteraction.enabled = false;
+                //Text_manager_script.NPCInteractionActive();
                 levelStatus.collect_enable = true;
-
+                gameObject.SetActive(false);
+                interact = false;
             }
         }
         else
         {
-            playerInteraction.enabled = false;
+            interact = false;
+
         }
     }
 }
