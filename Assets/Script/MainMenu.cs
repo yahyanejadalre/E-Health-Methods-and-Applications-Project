@@ -10,26 +10,10 @@ using UnityEngine.UI;
 [System.Serializable]
 public class Person
 {
-    public string name
-    {
-        get { return name; }   // get method
-        set { name = value; }  // set method
-    }
-    public string gender
-    {
-        get { return gender; }   // get method
-        set { gender = value; }  // set method
-    }
-    public int age
-    {
-        get { return age; }   // get method
-        set { age = value; }  // set method
-    }
-    public string character
-    {
-        get { return character; }   // get method
-        set { character = value; }  // set method
-    }
+    public string name;
+    public string gender;
+    public int age;
+    public string character;
 
     public Person(string name, string gender, int age, string character)
     {
