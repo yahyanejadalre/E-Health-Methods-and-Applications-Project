@@ -9,10 +9,12 @@ public class NewBehaviourScript : MonoBehaviour
     public levelStatus levelStatus; // Riferimento allo script LevelStatus
     private Animator animator; // Riferimento all'Animator del personaggio
     private CinemachineVirtualCamera playerFollowCamera;
+    private Text_manager_script Text_manager_script;
 
     void Start()
     {
         levelStatus = GameObject.Find("Level_status").GetComponent<levelStatus>(); // Assicurati che il GameObject "Level_status" abbia lo script LevelStatus
+        Text_manager_script = GameObject.Find("Level_status").GetComponent<Text_manager_script>();
         animator = GetComponent<Animator>(); // Ottieni il riferimento all'Animator del personaggio
         playerFollowCamera = GameObject.Find("PlayerFollowCamera").GetComponent<CinemachineVirtualCamera>(); // Trova la CinemachineVirtual Camera
     }
@@ -39,6 +41,9 @@ public class NewBehaviourScript : MonoBehaviour
                 transform.position = levelStatus.Checkpoint;
 
                 TeleportCamera();
+
+                Text_manager_script.NPCInteractionOff();
+                Text_manager_script.InteractionTextOff();
 
                 // Riattiva l'animazione dopo il teletrasporto (eventualmente dopo un breve ritardo)
                 StartCoroutine(EnableAnimatorAfterDelay());
