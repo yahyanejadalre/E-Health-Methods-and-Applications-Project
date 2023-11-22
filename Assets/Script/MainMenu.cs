@@ -26,15 +26,14 @@ public class Person
 
 public class MainMenu : MonoBehaviour
 {
+    public static MainMenu mainMenu;
     public TMP_InputField NameInputFied;
     public TMP_InputField GenderInputFied;
     public TMP_InputField AgeInputFied;
-
-    private List<Person> HumanList = new List<Person>();
-    private List<InputField> InputList= new List<InputField>();
     private InputField[] Inputs;
     public void PlayGame()
     {
+       
         string character = "";
         if (int.Parse(AgeInputFied.text) < 50 && GenderInputFied.text == "male")
         {
@@ -58,7 +57,6 @@ public class MainMenu : MonoBehaviour
         }
         int AgeInputNumber = int.Parse(AgeInputFied.text);
         var NewPerson = new Person(NameInputFied.text,GenderInputFied.text,AgeInputNumber,character);
-        Debug.Log("");
         print("name is " + NameInputFied.text);
         print("gender is " + GenderInputFied.text);
         print("age is "+ AgeInputNumber);
