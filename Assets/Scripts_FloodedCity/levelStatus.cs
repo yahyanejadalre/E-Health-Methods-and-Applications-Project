@@ -8,17 +8,29 @@ public class levelStatus : MonoBehaviour
     public int NumBatteriesCollected = 0;
     public Vector3 Checkpoint;
     private GameObject playerObject;
+    private GameObject Easy_mode;
     public bool updated = false;
     public bool collect_enable = false;
+    public bool easy_mode_enabled; 
 
     void Start()
     {
         playerObject = GameObject.FindGameObjectWithTag("Player"); // Trova il GameObject del giocatore
+        Easy_mode = GameObject.Find("Easy_mode");
 
         if (playerObject != null)
         {
             // Salva le coordinate iniziali del giocatore come Checkpoint
             Checkpoint = playerObject.transform.position;
+        }
+
+        if(easy_mode_enabled == true)
+        {
+            Easy_mode.SetActive(true);
+        }
+        else
+        {
+            Easy_mode.SetActive(false);
         }
     }
 

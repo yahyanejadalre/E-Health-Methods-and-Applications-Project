@@ -34,7 +34,10 @@ public class NPC_interact_text : MonoBehaviour
             if (Input.GetKeyDown(interactKey))
             {
                 //Text_manager_script.NPCInteractionActive();
-                levelStatus.collect_enable = true;
+                if (gameObject.name != "Trigger_Scientist")
+                {
+                    levelStatus.collect_enable = true;
+                }
                 gameObject.SetActive(false);
                 interact = false;
             }
