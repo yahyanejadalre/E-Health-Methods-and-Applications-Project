@@ -46,11 +46,11 @@ public class MainMenu : MonoBehaviour
         {
             character = "young man";
         }
-        else if (int.Parse(AgeInputFied.text) < 50 && maleToggle.isOn)
+        else if (int.Parse(AgeInputFied.text) < 50 && femaleToggle.isOn)
         {
             character = "young woman";
         }
-        else if (int.Parse(AgeInputFied.text) > 50 && femaleToggle.isOn)
+        else if (int.Parse(AgeInputFied.text) > 50 && maleToggle.isOn)
         {
             character = "middle aged man";
         }
