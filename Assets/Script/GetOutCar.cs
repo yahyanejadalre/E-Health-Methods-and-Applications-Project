@@ -2,10 +2,10 @@ using UnityEngine;
 using TMPro;
 
 
-public class CarController : MonoBehaviour
+public class GetOutCar : MonoBehaviour
 {
-    
     public GameObject oggettoDaRaccogliere;
+    public GameObject carSecond;
     public float distanzaMassima;
     public TextMeshProUGUI interactText;
     private Transform figlio2car;
@@ -16,6 +16,7 @@ public class CarController : MonoBehaviour
     {
         // Assicura che il testo sia inizialmente nascosto all'avvio
         HideInteractMessage();
+        carSecond.SetActive(false);
         Transform figlio1 = transform.Find("Geometry");
         if (figlio1 != null)
         {
@@ -33,7 +34,7 @@ public class CarController : MonoBehaviour
         if (distanza <= distanzaMassima)
         {
             ShowInteractMessage();
-            Drive();
+            GetOut();
         }
         else
         {
@@ -42,7 +43,7 @@ public class CarController : MonoBehaviour
     }
     
     
-    void Drive()
+    void GetOut()
     {
         if (oggettoDaRaccogliere != null)
         {
@@ -50,7 +51,7 @@ public class CarController : MonoBehaviour
             {
                 HideInteractMessage();
                 oggettoDaRaccogliere.SetActive(false);
-                ActiveCar();
+                DisactiveCar();
             }
         }
     }
@@ -70,12 +71,13 @@ public class CarController : MonoBehaviour
             interactText.gameObject.SetActive(false);
         }
     }
-    public void ActiveCar()
+    public void DisactiveCar()
     {
         if (figlio2car != null)
         {
-            figlio2car.gameObject.SetActive(true);
-            figlio2people.gameObject.SetActive(false);
+            figlio2car.gameObject.SetActive(false);
+            figlio2people.gameObject.SetActive(true);
+            carSecond.SetActive(true);
         }
     }
 }
