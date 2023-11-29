@@ -28,8 +28,8 @@ public class MainMenu : MonoBehaviour
 {
     public static MainMenu mainMenu;
     public TMP_InputField NameInputFied;
-    public TMP_InputField AgeInputFied;
-    public Toggle maleToggle;
+    public static TMP_InputField AgeInputFied;
+    public static Toggle maleToggle;
     public Toggle femaleToggle;
     private InputField[] Inputs;
     public void PlayGame()
