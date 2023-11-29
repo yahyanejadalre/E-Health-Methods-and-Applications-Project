@@ -32,10 +32,10 @@ public class MainMenu : MonoBehaviour
     public TMP_InputField AgeInputFied;
     public Toggle maleToggle;
     public Toggle femaleToggle;
-    public string name="";
-    public string character = "";
-    public int age=0;
-    public string gender="";
+    public static string name="";
+    public static string character = "";
+    public static int age=0;
+    public static string gender="";
     public void PlayGame()
     {
         string genderWithToggle="";
