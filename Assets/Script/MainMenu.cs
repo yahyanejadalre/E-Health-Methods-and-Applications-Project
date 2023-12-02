@@ -28,10 +28,14 @@ public class MainMenu : MonoBehaviour
 {
     public static MainMenu mainMenu;
     public TMP_InputField NameInputFied;
+    public TMP_InputField GenderInputFied;
     public TMP_InputField AgeInputFied;
     public Toggle maleToggle;
     public Toggle femaleToggle;
-    private InputField[] Inputs;
+    public static string name="";
+    public static string character = "";
+    public static int age=0;
+    public static string gender="";
     public void PlayGame()
     {
         string genderWithToggle="";
@@ -41,7 +45,6 @@ public class MainMenu : MonoBehaviour
         if(femaleToggle.isOn){
             genderWithToggle="female";
         }
-        string character = "";
         if (int.Parse(AgeInputFied.text) < 50 && maleToggle.isOn)
         {
             character = "young man";
@@ -62,12 +65,15 @@ public class MainMenu : MonoBehaviour
         {
             character = "error";
         }
+        name=NameInputFied.text;
+        age=int.Parse(AgeInputFied.text);
+        gender=genderWithToggle;
         int AgeInputNumber = int.Parse(AgeInputFied.text);
         var NewPerson = new Person(NameInputFied.text,genderWithToggle,AgeInputNumber,character);
-        print("name is " + NewPerson.name);
-        print("gender is " + NewPerson.gender);
-        print("age is "+ NewPerson.age);
-        print("character is " + NewPerson.character);
+        print("name is " + name);
+        print("gender is " + gender);
+        print("age is "+ age);
+        print("character is " + character);
 
         SceneManager.LoadSceneAsync("Lev1_House");
     }
