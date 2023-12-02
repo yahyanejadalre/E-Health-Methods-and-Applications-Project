@@ -1,12 +1,20 @@
 using UnityEngine;
+using TMPro;
+using Unity.Collections;
 
 public class RaccoltaOggetto : MonoBehaviour
 {
     // Dichiarazione della variabile nell'editor Unity
     public GameObject oggettoDaRaccogliere;
     public float distanzaMassima;
+    public TextMeshProUGUI interactText;
+    public Level_Status_glacial Level_Status_glacial;
 
-    
+    private void Start()
+    {
+        // Assicura che il testo sia inizialmente nascosto all'avvio
+        HideInteractMessage();
+    }
     void Update()
     {
         // Trova la distanza tra il giocatore e l'oggetto
@@ -17,16 +25,39 @@ public class RaccoltaOggetto : MonoBehaviour
         {
             RaccogliOggetto();
         }
+        else
+        {
+            HideInteractMessage();
+        }
     }
 
     void RaccogliOggetto()
     {
         if (oggettoDaRaccogliere != null)
         {
+            ShowInteractMessage();
             if (Input.GetKeyDown(KeyCode.F))
             {
+                Level_Status_glacial.NumCheck++;
+                Level_Status_glacial.ArrayLight[Level_Status_glacial.NumCheck - 1].SetActive(true);
+                HideInteractMessage();
                 oggettoDaRaccogliere.SetActive(false);
             }
+        }
+    }
+    private void ShowInteractMessage()
+    {
+        if (interactText != null)
+        {
+            interactText.gameObject.SetActive(true);
+        }
+    }
+
+    private void HideInteractMessage()
+    {
+        if (interactText != null)
+        {
+            interactText.gameObject.SetActive(false);
         }
     }
 }

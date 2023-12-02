@@ -7,6 +7,7 @@ public class ConverstaionStarter : MonoBehaviour
     [SerializeField] private NPCConversation myConversation;
     public TextMeshProUGUI interactText;
     private bool conversationStarted = false;
+    public Level_Status_glacial Level_Status_glacial;
 
     private void Start()
     {
@@ -55,6 +56,8 @@ public class ConverstaionStarter : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
+                Level_Status_glacial.NumCheck++;
+                Level_Status_glacial.ArrayLight[Level_Status_glacial.NumCheck - 1].SetActive(true);
                 HideInteractMessage();
                 ConversationManager.Instance.StartConversation(myConversation);
                 conversationStarted = true;

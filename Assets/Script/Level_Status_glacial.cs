@@ -9,8 +9,10 @@ public class Level_Status_glacial : MonoBehaviour
     public Vector3 Checkpoint;
     private GameObject playerObject;
     public bool updated = false;
-    public bool collect_enable = false;
-
+    public GameObject[] ArrayLight;
+    public int NumIce = 1;
+    public int pressCount = 0;
+    
     void Start()
     {
         playerObject = GameObject.FindGameObjectWithTag("Player"); // Trova il GameObject del giocatore
@@ -33,7 +35,6 @@ public class Level_Status_glacial : MonoBehaviour
         {
             Checkpoint = GameObject.FindGameObjectWithTag("Player").transform.position;
             updated = true;
-            NumCheck++;
         }
     }
 }

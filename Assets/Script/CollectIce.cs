@@ -1,13 +1,20 @@
 using UnityEngine;
+using TMPro;
 
 public class RaccoltaGhiaccio : MonoBehaviour
 {
     // Dichiarazione della variabile nell'editor Unity
     public GameObject oggettoDaRaccogliere;
-    private int pressCount = 0;
-    public int nPress;
     public float distanzaMassima;
+    public Level_Status_glacial Level_Status_glacial;
+    public int ActualIce;
+    public TextMeshProUGUI interactText;
     
+    private void Start()
+    {
+        // Assicura che il testo sia inizialmente nascosto all'avvio
+        HideInteractMessage();
+    }
     
     void Update()
     {
@@ -15,17 +22,21 @@ public class RaccoltaGhiaccio : MonoBehaviour
         float distanza = Vector3.Distance(transform.position, oggettoDaRaccogliere.transform.position);
         
         // Se il giocatore è abbastanza vicino, disattiva l'oggetto
-        if (distanza <= distanzaMassima)
+        if (distanza <= distanzaMassima && oggettoDaRaccogliere != null)
         {
+            ShowInteractMessage();
             if (Input.GetKeyDown(KeyCode.F))
             {
-                pressCount = pressCount + 1;
+                Level_Status_glacial.pressCount++;
             }
-            if (Input.GetKeyDown(KeyCode.F) && pressCount == nPress)
+            if (Level_Status_glacial.pressCount == 2 && Level_Status_glacial.NumIce == ActualIce)
             {
-                pressCount = pressCount + 1;
                 RaccogliIce();
             }
+        }
+        else
+        {
+            HideInteractMessage();
         }
     }
 
@@ -33,7 +44,25 @@ public class RaccoltaGhiaccio : MonoBehaviour
     {
         if (oggettoDaRaccogliere != null)
         {
-            Destroy(oggettoDaRaccogliere);
+            Level_Status_glacial.pressCount = 0;
+            oggettoDaRaccogliere.SetActive(false);
+            HideInteractMessage();
+            Level_Status_glacial.NumIce++;
+        }
+    }
+    private void ShowInteractMessage()
+    {
+        if (interactText != null)
+        {
+            interactText.gameObject.SetActive(true);
+        }
+    }
+
+    private void HideInteractMessage()
+    {
+        if (interactText != null)
+        {
+            interactText.gameObject.SetActive(false);
         }
     }
 }

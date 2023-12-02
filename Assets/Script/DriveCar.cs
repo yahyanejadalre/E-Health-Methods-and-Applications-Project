@@ -1,5 +1,8 @@
+using StarterAssets;
 using UnityEngine;
 using TMPro;
+using Cinemachine;
+
 
 
 public class CarController : MonoBehaviour
@@ -10,6 +13,11 @@ public class CarController : MonoBehaviour
     public TextMeshProUGUI interactText;
     private Transform figlio2car;
     private Transform figlio2people;
+    public Level_Status_glacial Level_Status_glacial;
+    public int ActualCheck;
+    public ThirdPersonController ThirdPersonController;
+    public CinemachineVirtualCamera CinemachineVirtualCamera;
+
     
     
     private void Start()
@@ -30,7 +38,7 @@ public class CarController : MonoBehaviour
         float distanza = Vector3.Distance(transform.position, oggettoDaRaccogliere.transform.position);
         
         // Se il giocatore è abbastanza vicino, disattiva l'oggetto
-        if (distanza <= distanzaMassima)
+        if (distanza <= distanzaMassima && Level_Status_glacial.NumCheck == ActualCheck)
         {
             ShowInteractMessage();
             Drive();
@@ -48,6 +56,8 @@ public class CarController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
+                Level_Status_glacial.NumCheck++;
+                Level_Status_glacial.ArrayLight[Level_Status_glacial.NumCheck - 1].SetActive(true);
                 HideInteractMessage();
                 oggettoDaRaccogliere.SetActive(false);
                 ActiveCar();
@@ -76,6 +86,11 @@ public class CarController : MonoBehaviour
         {
             figlio2car.gameObject.SetActive(true);
             figlio2people.gameObject.SetActive(false);
+            ThirdPersonController.MoveSpeed = 5.0f;
+            ThirdPersonController.SprintSpeed = 12.5f;
+            ThirdPersonController.RotationSmoothTime = 0.27f;
+            ThirdPersonController.JumpHeight = 0f;
+            CinemachineVirtualCamera.m_Lens.FieldOfView = 70.0f;
         }
     }
 }

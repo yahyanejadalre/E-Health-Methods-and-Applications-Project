@@ -26,7 +26,6 @@ public class ScompareOggetto : MonoBehaviour
             // Se il giocatore è abbastanza vicino, disattiva l'oggetto
             if (distanza <= distanzaMassima)
             {
-                Level_Status_glacial.NumCheck++;
                 Level_Status_glacial.updated = false;
                 OggettoScompare.SetActive(false);
             }
