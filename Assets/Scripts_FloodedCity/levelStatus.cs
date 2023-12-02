@@ -19,8 +19,14 @@ public class levelStatus : MonoBehaviour
     public int cluster = 1;
     public float improvement = 0;
     public float worsening = 0;
-    //bool male = false;
-    //int age = 0;
+    private string character = MainMenu.mainMenu.character;
+    private int age = MainMenu.mainMenu.age;
+    public GameObject middle_age_men;
+    public GameObject middle_age_women;
+    public GameObject young_men;
+    public GameObject young_women;
+
+
 
     void Start()
     {
@@ -30,13 +36,34 @@ public class levelStatus : MonoBehaviour
         Worsening = GameObject.Find("Worsening");
         cluster = CLUSTERING_ALL_SCENES.cluster;
 
-        //male = MainMenu.maleToggle.isOn;
-        //age = int.Parse(MainMenu.AgeInputFied.text);
-            
-        if (playerObject != null)
+        //character = "young woman";
+
+        if (character == "young man")
         {
-            // Salva le coordinate iniziali del giocatore come Checkpoint
-            Checkpoint = playerObject.transform.position;
+            young_men.SetActive(true);
+        }
+        if (character == "young woman")
+        {
+            young_men.SetActive(false);
+            young_women.SetActive(true);
+        }
+        if (character == "middle aged man")
+        {
+            young_men.SetActive(false);
+            middle_age_men.SetActive(true);
+        }
+        if (character == "middle aged woman")
+        {
+            young_men.SetActive(false);
+            middle_age_women.SetActive(true);
+        }
+        
+        Checkpoint = playerObject.transform.position;
+
+        // Makes the game easier if the age is above a threshold
+        if(age > 35)
+        {
+            easy_mode_enabled = true;
         }
 
         if(easy_mode_enabled == true)
