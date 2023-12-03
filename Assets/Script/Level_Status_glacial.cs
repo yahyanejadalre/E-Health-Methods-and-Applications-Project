@@ -14,13 +14,18 @@ public class Level_Status_glacial : MonoBehaviour
     public int pressCount = 0;
     public bool timer_enable;
     public int cluster = 1;
-    public float improvement = 0;
+    public static float improvement = 0;
+    public static float worsening = 0;
     private string character;
     private int age = 0;
     public GameObject middle_age_men;
     public GameObject middle_age_women;
     public GameObject young_men;
     public GameObject young_women;
+    private GameObject Improvement;
+    private GameObject Worsening;
+    
+    
     
     void Start()
     {
@@ -28,6 +33,8 @@ public class Level_Status_glacial : MonoBehaviour
         character = MainMenu.character;
         age = MainMenu.age;
         cluster = CLUSTERING_ALL_SCENES.cluster;
+        Improvement = GameObject.Find("Improvement");
+        Worsening = GameObject.Find("Worsening");
         if (character == "young man")
         {
             young_men.SetActive(true);
@@ -65,6 +72,8 @@ public class Level_Status_glacial : MonoBehaviour
 
     void Update()
     {
+        improvement = Improvement.transform.position.y;
+        worsening = Worsening.transform.position.y;
         SaveCheckpoint();
     }
 
