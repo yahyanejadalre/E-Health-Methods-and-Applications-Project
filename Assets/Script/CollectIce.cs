@@ -42,11 +42,11 @@ public class RaccoltaGhiaccio : MonoBehaviour
 
     void RaccogliIce()
     {
+        HideInteractMessage();
         if (oggettoDaRaccogliere != null)
         {
             Level_Status_glacial.pressCount = 0;
             oggettoDaRaccogliere.SetActive(false);
-            HideInteractMessage();
             Level_Status_glacial.NumIce++;
         }
     }
