@@ -19,8 +19,8 @@ public class levelStatus : MonoBehaviour
     public int cluster = 1;
     public float improvement = 0;
     public float worsening = 0;
-    private string character = MainMenu.mainMenu.character;
-    private int age = MainMenu.mainMenu.age;
+    private string character;
+    private int age = 0;
     public GameObject middle_age_men;
     public GameObject middle_age_women;
     public GameObject young_men;
@@ -30,6 +30,9 @@ public class levelStatus : MonoBehaviour
 
     void Start()
     {
+        character = MainMenu.character;
+        age = MainMenu.age;
+
         playerObject = GameObject.FindGameObjectWithTag("Player"); // Trova il GameObject del giocatore
         Easy_mode = GameObject.Find("Easy_mode");
         Improvement = GameObject.Find("Improvement");
