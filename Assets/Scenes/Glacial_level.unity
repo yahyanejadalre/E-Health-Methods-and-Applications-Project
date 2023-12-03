@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 368e9da177f34ec4396e45202e3a6a1b, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -17715,6 +17715,7 @@ MonoBehaviour:
   myConversation: {fileID: 768346361}
   interactText: {fileID: 169831087}
   Level_Status_glacial: {fileID: 1425551214}
+  ActualCheck: 1
 --- !u!65 &382138967
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21179,8 +21180,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1889313545690738, guid: ad37c0f463d2b0e429d42a12ec7b2469, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 567395213}
   m_SourcePrefab: {fileID: 100100000, guid: ad37c0f463d2b0e429d42a12ec7b2469, type: 3}
+--- !u!1 &567395212 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1889313545690738, guid: ad37c0f463d2b0e429d42a12ec7b2469, type: 3}
+  m_PrefabInstance: {fileID: 567395211}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &567395213
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567395212}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2.348342
+  m_Direction: 1
+  m_Center: {x: -0, y: 0.674171, z: 0}
 --- !u!1001 &569134130
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21400,7 +21432,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409496, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409496, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
@@ -51993,6 +52025,7 @@ MonoBehaviour:
   myConversation: {fileID: 874559750}
   interactText: {fileID: 2047827918}
   Level_Status_glacial: {fileID: 1425551214}
+  ActualCheck: 0
 --- !u!65 &1852757514
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -54064,7 +54097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   oggettoDaRaccogliere: {fileID: 1411560711}
-  distanzaMassima: 3
+  distanzaMassima: 4
   interactText: {fileID: 545661849}
   Level_Status_glacial: {fileID: 1425551214}
   ActualCheck: 2
@@ -56468,8 +56501,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1889313545690738, guid: ad37c0f463d2b0e429d42a12ec7b2469, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2074589528}
   m_SourcePrefab: {fileID: 100100000, guid: ad37c0f463d2b0e429d42a12ec7b2469, type: 3}
+--- !u!1 &2074589527 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1889313545690738, guid: ad37c0f463d2b0e429d42a12ec7b2469, type: 3}
+  m_PrefabInstance: {fileID: 2074589526}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &2074589528
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074589527}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 2.4292927
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.71464634, z: 0}
 --- !u!1 &2081119773 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 114578, guid: e4ecdd09cefb01a42a7974379aff61aa, type: 3}
@@ -56999,6 +57063,7 @@ MonoBehaviour:
   myConversation: {fileID: 988659486}
   interactText: {fileID: 169831087}
   Level_Status_glacial: {fileID: 1425551214}
+  ActualCheck: 0
 --- !u!65 &2118558263
 BoxCollider:
   m_ObjectHideFlags: 0

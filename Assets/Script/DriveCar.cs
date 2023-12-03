@@ -7,7 +7,6 @@ using Cinemachine;
 
 public class CarController : MonoBehaviour
 {
-    
     public GameObject oggettoDaRaccogliere;
     public float distanzaMassima;
     public TextMeshProUGUI interactText;

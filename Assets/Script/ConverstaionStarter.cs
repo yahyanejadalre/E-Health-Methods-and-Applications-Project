@@ -8,6 +8,7 @@ public class ConverstaionStarter : MonoBehaviour
     public TextMeshProUGUI interactText;
     private bool conversationStarted = false;
     public Level_Status_glacial Level_Status_glacial;
+    public int ActualCheck;
 
     private void Start()
     {
@@ -17,7 +18,7 @@ public class ConverstaionStarter : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && !conversationStarted)
+        if (other.CompareTag("Player") && !conversationStarted && Level_Status_glacial.NumCheck == ActualCheck)
         {
             // Quando il giocatore entra, mostra il testo "Press F" sulla Canvas
             ShowInteractMessage();
