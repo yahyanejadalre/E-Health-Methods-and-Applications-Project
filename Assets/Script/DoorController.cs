@@ -1,25 +1,42 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class DoorController : MonoBehaviour
 {
     public float distanzaRilevamento = 2f; // Distanza a cui si attiverà l'apertura
+    public TextMeshProUGUI interactText;
     public string tagPersonaggioPrincipale = "Player";
     private bool isDoorOpen = false;
+        
+    private void Start()
+    {
+        // Assicura che il testo sia inizialmente nascosto all'avvio
+        HideInteractMessage();
+    }
 
     void Update()
     {
-        // Se il giocatore è abbastanza vicino e preme il tasto "F"
-        if (Input.GetKeyDown(KeyCode.F) && IsPlayerNear())
+        if (IsPlayerNear())
         {
-            // Inverte lo stato della porta (aperta o chiusa)
-            isDoorOpen = !isDoorOpen;
+            ShowInteractMessage();
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                // Inverte lo stato della porta (aperta o chiusa)
+                isDoorOpen = !isDoorOpen;
 
-            // Ruota la porta in base allo stato
-            float angoloRotazione = isDoorOpen ? 90f : -90f;
-            transform.Rotate(Vector3.up * angoloRotazione);
+                // Ruota la porta in base allo stato
+                float angoloRotazione = isDoorOpen ? 90f : -90f;
+                transform.Rotate(Vector3.up * angoloRotazione);
+            
+            }
         }
+        else
+        {
+            HideInteractMessage();    
+        }
+
     }
 
     bool IsPlayerNear()
@@ -39,4 +56,21 @@ public class DoorController : MonoBehaviour
         // Restituisci true se il personaggio è abbastanza vicino
         return distanza < distanzaRilevamento;
     }
+    
+    private void ShowInteractMessage()
+    {
+        if (interactText != null)
+        {
+            interactText.gameObject.SetActive(true);
+        }
+    }
+
+    private void HideInteractMessage()
+    {
+        if (interactText != null)
+        {
+            interactText.gameObject.SetActive(false);
+        }
+    }
+
 }
