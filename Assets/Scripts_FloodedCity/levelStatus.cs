@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using System.Security.Cryptography;
 using Unity.VisualScripting;
+using DialogueEditor;
 
 public class levelStatus : MonoBehaviour
 {
@@ -15,8 +16,9 @@ public class levelStatus : MonoBehaviour
     private GameObject Worsening;
     public bool updated = false;
     public bool collect_enable = false;
+
     public bool easy_mode_enabled;
-    public int cluster = 1;
+    public int cluster = 3;
     public float improvement = 0;
     public float worsening = 0;
     private string character;
@@ -25,7 +27,6 @@ public class levelStatus : MonoBehaviour
     public GameObject middle_age_women;
     public GameObject young_men;
     public GameObject young_women;
-
 
 
     void Start()
@@ -67,6 +68,10 @@ public class levelStatus : MonoBehaviour
         if(age > 35)
         {
             easy_mode_enabled = true;
+        }
+        else
+        {
+            easy_mode_enabled = false;
         }
 
         if(easy_mode_enabled == true)
