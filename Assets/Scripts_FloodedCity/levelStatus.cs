@@ -19,8 +19,8 @@ public class levelStatus : MonoBehaviour
 
     public bool easy_mode_enabled;
     public int cluster = 3;
-    public float improvement = 0;
-    public float worsening = 0;
+    public static float improvement = 0;
+    public static float worsening = 0;
     private string character;
     private int age = 0;
     public GameObject middle_age_men;
