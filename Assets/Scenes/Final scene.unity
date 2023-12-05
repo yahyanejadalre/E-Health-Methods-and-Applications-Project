@@ -8503,15 +8503,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.120517
+      value: 3.0247378
       objectReference: {fileID: 0}
     - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.9183147
+      value: 1.7743676
       objectReference: {fileID: 0}
     - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.527922
+      value: 6.0202165
       objectReference: {fileID: 0}
     - target: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -26630,15 +26630,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1472939050}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0067962017, y: 0.9984726, z: 0.002642901, w: -0.054767054}
-  m_LocalPosition: {x: 1, y: 2.56, z: 7.77}
+  m_LocalRotation: {x: -0.003010591, y: 0.000019993464, z: 0.0066408664, w: 0.9999734}
+  m_LocalPosition: {x: 2.843, y: 0.41, z: 7.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 829002490}
   - {fileID: 1890270069}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -212.615, z: 0}
+  m_LocalEulerAnglesHint: {x: -0.345, y: 0, z: 0.761}
 --- !u!64 &1472939053
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -27195,49 +27195,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 38
-  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":32,"yPos":-855.3331},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+  CurrentIDCounter: 36
+  json: '{"Options":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":15,"yPos":387.666626},"ID":7,"ParamActions":[],"TMPFontGUID":null,"Text":"I
     already know the situation is critical... humanity is doomed, it''s just a matter
-    of time.","parentUIDs":[4],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":477,"yPos":-853.3331},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"Again
+    of time.","parentUIDs":[4],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":460,"yPos":389.666626},"ID":8,"ParamActions":[],"TMPFontGUID":null,"Text":"Again
     with this climate change story. It''s all exaggerated tales! None of this alarmism
-    makes sense!","parentUIDs":[4],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":261,"yPos":-854.3331},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"I
-    know the situation is critical, and we need to do something as soon as possible.","parentUIDs":[4],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":24,"yPos":-592.333435},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"There
-    is nothing to do... I am always nervous and anxious about this global issue.","parentUIDs":[11],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":262,"yPos":-592.333435},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    makes sense!","parentUIDs":[4],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":11}],"EditorInfo":{"isRoot":false,"xPos":244,"yPos":388.666626},"ID":9,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    know the situation is critical, and we need to do something as soon as possible.","parentUIDs":[4],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":7,"yPos":650.66626},"ID":13,"ParamActions":[],"TMPFontGUID":null,"Text":"There
+    is nothing to do... I am always nervous and anxious about this global issue.","parentUIDs":[11],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":245,"yPos":650.66626},"ID":14,"ParamActions":[],"TMPFontGUID":null,"Text":"I
     really appriciate your advice. We should not be worried but all people should
-    be sensitive about this concern","parentUIDs":[11],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":497,"yPos":-595.333435},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"Why
+    be sensitive about this concern","parentUIDs":[11],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":17}],"EditorInfo":{"isRoot":false,"xPos":480,"yPos":647.66626},"ID":15,"ParamActions":[],"TMPFontGUID":null,"Text":"Why
     are you so worried about climate change? Our world has other serious problems
-    to solve.","parentUIDs":[11],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":26}],"EditorInfo":{"isRoot":false,"xPos":27,"yPos":-309.3342},"ID":23,"ParamActions":[],"TMPFontGUID":null,"Text":"It''s
+    to solve.","parentUIDs":[11],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":26}],"EditorInfo":{"isRoot":false,"xPos":10,"yPos":933.665649},"ID":23,"ParamActions":[],"TMPFontGUID":null,"Text":"It''s
     impossible to get all states to agree and have real collaboration to fight climate
-    change. It feels hopeless.","parentUIDs":[17],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":26}],"EditorInfo":{"isRoot":false,"xPos":259,"yPos":-306.3342},"ID":24,"ParamActions":[],"TMPFontGUID":null,"Text":"States
+    change. It feels hopeless.","parentUIDs":[17],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":26}],"EditorInfo":{"isRoot":false,"xPos":242,"yPos":936.665649},"ID":24,"ParamActions":[],"TMPFontGUID":null,"Text":"States
     and international institutions are discussing the problem to reach a solution.
-    Though it''s challenging, I believe a compromise can be found.","parentUIDs":[17],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":26}],"EditorInfo":{"isRoot":false,"xPos":497,"yPos":-306.3342},"ID":25,"ParamActions":[],"TMPFontGUID":null,"Text":"I''m
+    Though it''s challenging, I believe a compromise can be found.","parentUIDs":[17],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":26}],"EditorInfo":{"isRoot":false,"xPos":480,"yPos":936.665649},"ID":25,"ParamActions":[],"TMPFontGUID":null,"Text":"I''m
     honestly a bit doubtful that scientists and politicians are telling us the truth.
-    ","parentUIDs":[17],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":31}],"EditorInfo":{"isRoot":false,"xPos":24,"yPos":-22.333725},"ID":28,"ParamActions":[],"TMPFontGUID":null,"Text":"In
+    ","parentUIDs":[17],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":7,"yPos":1220.66614},"ID":28,"ParamActions":[],"TMPFontGUID":null,"Text":"In
     my personal opinion, the behavior of common people has little effect on stopping
-    global warming.\r \n","parentUIDs":[26],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":31}],"EditorInfo":{"isRoot":false,"xPos":258,"yPos":-13.333725},"ID":29,"ParamActions":[],"TMPFontGUID":null,"Text":"If
+    global warming.\r \n","parentUIDs":[26],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":31}],"EditorInfo":{"isRoot":false,"xPos":241,"yPos":1229.66614},"ID":29,"ParamActions":[],"TMPFontGUID":null,"Text":"If
     we pay attention also to small actions like recycling or reducing the amount
-    of waste we can fight the climate change.","parentUIDs":[26],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":31}],"EditorInfo":{"isRoot":false,"xPos":486,"yPos":-15.333725},"ID":30,"ParamActions":[],"TMPFontGUID":null,"Text":"Personally
+    of waste we can fight the climate change.","parentUIDs":[26],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":469,"yPos":1227.66614},"ID":30,"ParamActions":[],"TMPFontGUID":null,"Text":"Personally
     I think human activities are not correlated to global warming but it is just
-    a natural process.","parentUIDs":[26],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":36}],"EditorInfo":{"isRoot":false,"xPos":15,"yPos":251.666626},"ID":32,"ParamActions":[],"TMPFontGUID":null,"Text":"Floods,
+    a natural process.","parentUIDs":[26],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":-2,"yPos":1494.66663},"ID":32,"ParamActions":[],"TMPFontGUID":null,"Text":"Floods,
     fires, periods of drought occur now with extreme ease. The number of tragedies
-    can only increase in the coming years!","parentUIDs":[31],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":36}],"EditorInfo":{"isRoot":false,"xPos":257,"yPos":251.666626},"ID":33,"ParamActions":[],"TMPFontGUID":null,"Text":"Even
+    can only increase in the coming years!","parentUIDs":[31],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":240,"yPos":1494.66663},"ID":33,"ParamActions":[],"TMPFontGUID":null,"Text":"Even
     though these extreme events are increasing, through research and the collective
-    contribution of everyone, we can effectively counteract climate change.","parentUIDs":[31],"SpeechUID":-1},{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":36}],"EditorInfo":{"isRoot":false,"xPos":486,"yPos":252.666626},"ID":35,"ParamActions":[],"TMPFontGUID":null,"Text":"Nature
+    contribution of everyone, we can effectively counteract climate change.","parentUIDs":[31],"SpeechUID":-1},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":469,"yPos":1495.66663},"ID":35,"ParamActions":[],"TMPFontGUID":null,"Text":"Nature
     has been changing over recent years independently of human activity. We need
-    to be aware of this and try to adapt.","parentUIDs":[31],"SpeechUID":-1}],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":true,"xPos":269,"yPos":-1121},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Who
-    are you?...What are you doing here?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Adam","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":7},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":9},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":269,"yPos":-1037.333},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"My
+    to be aware of this and try to adapt.","parentUIDs":[31],"SpeechUID":-1}],"Parameters":[{"__type":"EditableIntParameter:#DialogueEditor","ParameterName":"New
+    int","IntValue":0}],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":4}],"EditorInfo":{"isRoot":true,"xPos":252,"yPos":122},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"Who
+    are you?...What are you doing here?","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Adam","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":7},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":9},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":8}],"EditorInfo":{"isRoot":false,"xPos":252,"yPos":205.666992},"ID":4,"ParamActions":[],"TMPFontGUID":null,"Text":"My
     name is Jack, and I come from the future. I''m here to talk to you about the
-    real consequences of climate change that will happen in 10 years.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Future","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":13},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":14},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":264,"yPos":-783.3328},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"My
+    real consequences of climate change that will happen in 10 years.","parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Future","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":13},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":14},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":15}],"EditorInfo":{"isRoot":false,"xPos":247,"yPos":459.6668},"ID":11,"ParamActions":[],"TMPFontGUID":null,"Text":"My
     real aim is to warn all of you that the time to act has arrived. Only through
-    the collaboration of everyone we can get out from this situation!!","parentUIDs":[7,8,9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Future","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":23},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":24},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":261,"yPos":-491.3332},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"Since
+    the collaboration of everyone we can get out from this situation!!","parentUIDs":[7,8,9],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Future","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":23},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":24},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":25}],"EditorInfo":{"isRoot":false,"xPos":244,"yPos":751.6665},"ID":17,"ParamActions":[],"TMPFontGUID":null,"Text":"Since
     the Paris Agreement in 2015, there have been few efforts from the world''s major
-    countries to limit climate change, and now the situation in my world is dramatic.","parentUIDs":[13,14,15],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Future","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":28},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":29},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":30}],"EditorInfo":{"isRoot":false,"xPos":257,"yPos":-214.333344},"ID":26,"ParamActions":[],"TMPFontGUID":null,"Text":"There
+    countries to limit climate change, and now the situation in my world is dramatic.","parentUIDs":[13,14,15],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Future","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":28},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":29},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":30}],"EditorInfo":{"isRoot":false,"xPos":240,"yPos":1028.66638},"ID":26,"ParamActions":[],"TMPFontGUID":null,"Text":"There
     is no doubt that the cause of climate change is due to human activity. However,
-    everyone can provide a positive impact  with the correct behaviours.","parentUIDs":[23,24,25],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Future","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":35},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":33},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":32}],"EditorInfo":{"isRoot":false,"xPos":257,"yPos":75.666275},"ID":31,"ParamActions":[],"TMPFontGUID":null,"Text":"Extreme
+    everyone can provide a positive impact  with the correct behaviours.","parentUIDs":[23,24,25],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Future","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":35},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":33},{"__type":"EditableOptionConnection:#DialogueEditor","Conditions":[],"NodeUID":32}],"EditorInfo":{"isRoot":false,"xPos":240,"yPos":1318.66614},"ID":31,"ParamActions":[],"TMPFontGUID":null,"Text":"Extreme
     events are increased in the last years and will increase much more in the future.
-    ","parentUIDs":[28,29,30],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Future","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":253,"yPos":376.666626},"ID":36,"ParamActions":[],"TMPFontGUID":null,"Text":"I
-    would like to show you my world. Thanks to a time travel you will be able to
-    see all the effects of the climate change!!","parentUIDs":[32,33,35],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Future","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+    ","parentUIDs":[29],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"Future","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
   saveVersion: 110
   DefaultName: 
   DefaultSprite: {fileID: 0}
@@ -27264,7 +27263,6 @@ MonoBehaviour:
   - {fileID: 2062877420}
   - {fileID: 2062877419}
   - {fileID: 2062877418}
-  - {fileID: 2062877421}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
@@ -29509,31 +29507,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.120517
+      value: 3.0247378
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.9183147
+      value: 1.7743676
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.527922
+      value: 6.0202165
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.054767054
+      value: 0.9999734
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.0067962017
+      value: -0.003010591
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9984726
+      value: 0.000019993464
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.002642901
+      value: 0.0066408664
       objectReference: {fileID: 0}
     - target: {fileID: 8944336655422409503, guid: f6d148d888ffbf54b9afe9936dfaec1f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -39438,7 +39436,6 @@ GameObject:
   - component: {fileID: 2062877420}
   - component: {fileID: 2062877419}
   - component: {fileID: 2062877418}
-  - component: {fileID: 2062877421}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -40037,25 +40034,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   NodeID: 32
-  TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
-  Audio: {fileID: 0}
---- !u!114 &2062877421
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2062877391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event:
-    m_PersistentCalls:
-      m_Calls: []
-  NodeID: 36
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
