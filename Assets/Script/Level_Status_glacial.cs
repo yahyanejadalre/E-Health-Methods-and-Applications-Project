@@ -10,22 +10,23 @@ public class Level_Status_glacial : MonoBehaviour
     private GameObject playerObject;
     public bool updated = false;
     public GameObject[] ArrayLight;
+    public GameObject[] TriggersHouse;
+    public GameObject[] TriggersScientist;
+    public GameObject[] TriggersComputer;
     public int NumIce = 1;
-    public int pressCount = 0;
     public bool timer_enable;
-    public int cluster = 1;
+    public bool easy_mode;
+    public int cluster;
     public static float improvement = 0;
     public static float worsening = 0;
     private string character;
-    private int age = 0;
+    public int age;
     public GameObject middle_age_men;
     public GameObject middle_age_women;
     public GameObject young_men;
     public GameObject young_women;
     private GameObject Improvement;
     private GameObject Worsening;
-    
-    
     
     void Start()
     {
@@ -38,7 +39,7 @@ public class Level_Status_glacial : MonoBehaviour
         if (character == "young man")
         {
             young_men.SetActive(true);
-            }
+        }
         if (character == "young woman")
         {
             young_men.SetActive(false);
@@ -54,14 +55,20 @@ public class Level_Status_glacial : MonoBehaviour
             young_men.SetActive(false);
             middle_age_women.SetActive(true);
         }
-
+        age = 3;
+        cluster = 2;
+        TriggersHouse[cluster - 1].SetActive(true);
+        TriggersScientist[cluster - 1].SetActive(true);
+        TriggersComputer[cluster - 1].SetActive(true);
         if (age >= 35)
         {
+            easy_mode = true;
             timer_enable = false;
         }
         else
         {
-            timer_enable = false;
+            easy_mode = false;
+            timer_enable = true;
         }
         if (playerObject != null)
         {
@@ -72,14 +79,14 @@ public class Level_Status_glacial : MonoBehaviour
 
     void Update()
     {
-        improvement = Improvement.transform.position.y;
-        worsening = Worsening.transform.position.y;
+    //    improvement = Improvement.transform.position.y;
+     //   worsening = Worsening.transform.position.y;
         SaveCheckpoint();
     }
 
     void SaveCheckpoint()
     {
-        if (NumCheck > 0 && updated == false)
+        if (NumCheck >= 0 && updated == false)
         {
             Checkpoint = GameObject.FindGameObjectWithTag("Player").transform.position;
             updated = true;

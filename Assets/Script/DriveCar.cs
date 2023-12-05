@@ -16,8 +16,6 @@ public class CarController : MonoBehaviour
     public int ActualCheck;
     public ThirdPersonController ThirdPersonController;
     public CinemachineVirtualCamera CinemachineVirtualCamera;
-
-    
     
     private void Start()
     {
@@ -37,7 +35,7 @@ public class CarController : MonoBehaviour
         float distanza = Vector3.Distance(transform.position, oggettoDaRaccogliere.transform.position);
         
         // Se il giocatore è abbastanza vicino, disattiva l'oggetto
-        if (distanza <= distanzaMassima && Level_Status_glacial.NumCheck == ActualCheck)
+        if (distanza <= distanzaMassima && figlio2people.gameObject.activeSelf && Level_Status_glacial.NumCheck == ActualCheck)
         {
             ShowInteractMessage();
             Drive();
@@ -90,6 +88,7 @@ public class CarController : MonoBehaviour
             ThirdPersonController.RotationSmoothTime = 0.27f;
             ThirdPersonController.JumpHeight = 0f;
             CinemachineVirtualCamera.m_Lens.FieldOfView = 70.0f;
+            ThirdPersonController.FootstepAudioVolume = 0.0f;
         }
     }
 }

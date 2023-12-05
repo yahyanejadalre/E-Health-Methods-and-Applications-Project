@@ -4,34 +4,44 @@ using TMPro;
 public class RaccoltaGhiaccio : MonoBehaviour
 {
     // Dichiarazione della variabile nell'editor Unity
-    public GameObject oggettoDaRaccogliere;
     public float distanzaMassima;
-    public Level_Status_glacial Level_Status_glacial;
-    public int ActualIce;
     public TextMeshProUGUI interactText;
+    public GameObject[] ArrayIce;
+    private int pressCount = 0;
+    public int ActualCheck;
+    private int ice = 0;
+    public Level_Status_glacial Level_Status_glacial;
     
     private void Start()
     {
-        // Assicura che il testo sia inizialmente nascosto all'avvio
         HideInteractMessage();
     }
     
     void Update()
     {
         // Trova la distanza tra il giocatore e l'oggetto
-        float distanza = Vector3.Distance(transform.position, oggettoDaRaccogliere.transform.position);
-        
-        // Se il giocatore è abbastanza vicino, disattiva l'oggetto
-        if (distanza <= distanzaMassima && oggettoDaRaccogliere != null)
+
+        if (ice < 3)
         {
-            ShowInteractMessage();
-            if (Input.GetKeyDown(KeyCode.F))
+            float distanza = Vector3.Distance(transform.position, ArrayIce[ice].transform.position);
+
+            // Se il giocatore è abbastanza vicino, disattiva l'oggetto
+            if (distanza <= distanzaMassima && ice < 3 && Level_Status_glacial.NumCheck == ActualCheck)
             {
-                Level_Status_glacial.pressCount++;
+                ShowInteractMessage();
+                if (Input.GetKeyDown(KeyCode.F))
+                {
+                    pressCount++;
+                }
+
+                if (pressCount == 2)
+                {
+                    RaccogliIce();
+                }
             }
-            if (Level_Status_glacial.pressCount == 2 && Level_Status_glacial.NumIce == ActualIce)
+            else
             {
-                RaccogliIce();
+                HideInteractMessage();
             }
         }
         else
@@ -42,12 +52,11 @@ public class RaccoltaGhiaccio : MonoBehaviour
 
     void RaccogliIce()
     {
-        HideInteractMessage();
-        if (oggettoDaRaccogliere != null)
+        if (ArrayIce[ice] != null)
         {
-            Level_Status_glacial.pressCount = 0;
-            oggettoDaRaccogliere.SetActive(false);
-            Level_Status_glacial.NumIce++;
+            pressCount = 0;
+            ArrayIce[ice].SetActive(false);
+            ice++;
         }
     }
     private void ShowInteractMessage()

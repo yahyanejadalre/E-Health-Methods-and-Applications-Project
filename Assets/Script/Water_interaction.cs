@@ -4,7 +4,7 @@ using UnityEngine;
 using Cinemachine;
 using TMPro;
 
-public class NewBehaviourScript : MonoBehaviour
+public class NewBehaviourScWript : MonoBehaviour
 {
     public levelStatus levelStatus; // Riferimento allo script LevelStatus
     private Animator animator; // Riferimento all'Animator del personaggio

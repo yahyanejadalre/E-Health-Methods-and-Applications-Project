@@ -12,7 +12,6 @@ public class ConverstaionStarter : MonoBehaviour
 
     private void Start()
     {
-        // Assicura che il testo sia inizialmente nascosto all'avvio
         HideInteractMessage();
     }
 
@@ -20,7 +19,6 @@ public class ConverstaionStarter : MonoBehaviour
     {
         if (other.CompareTag("Player") && !conversationStarted && Level_Status_glacial.NumCheck == ActualCheck)
         {
-            // Quando il giocatore entra, mostra il testo "Press F" sulla Canvas
             ShowInteractMessage();
         }
     }
@@ -29,7 +27,6 @@ public class ConverstaionStarter : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            // Quando il giocatore esce, nascondi il testo dalla Canvas
             HideInteractMessage();
         }
     }
@@ -55,10 +52,13 @@ public class ConverstaionStarter : MonoBehaviour
         // Gestisci l'avvio della conversazione se il giocatore è nel trigger
         if (other.CompareTag("Player") && !conversationStarted)
         {
-            if (Input.GetKeyDown(KeyCode.F))
+            if (Input.GetKeyDown(KeyCode.F) && Level_Status_glacial.NumCheck == ActualCheck)
             {
                 Level_Status_glacial.NumCheck++;
-                Level_Status_glacial.ArrayLight[Level_Status_glacial.NumCheck - 1].SetActive(true);
+                if (Level_Status_glacial.NumCheck - 1 <= 6)
+                {
+                    Level_Status_glacial.ArrayLight[Level_Status_glacial.NumCheck - 1].SetActive(true);
+                }
                 HideInteractMessage();
                 ConversationManager.Instance.StartConversation(myConversation);
                 conversationStarted = true;

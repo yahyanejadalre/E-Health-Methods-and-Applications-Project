@@ -9,10 +9,11 @@ public class RaccoltaOggetto : MonoBehaviour
     public float distanzaMassima;
     public TextMeshProUGUI interactText;
     public Level_Status_glacial Level_Status_glacial;
+    public int ActualCheck;
+
 
     private void Start()
     {
-        // Assicura che il testo sia inizialmente nascosto all'avvio
         HideInteractMessage();
     }
     void Update()
@@ -33,7 +34,7 @@ public class RaccoltaOggetto : MonoBehaviour
 
     void RaccogliOggetto()
     {
-        if (oggettoDaRaccogliere != null)
+        if (oggettoDaRaccogliere != null && oggettoDaRaccogliere.activeSelf && Level_Status_glacial.NumCheck == ActualCheck)
         {
             ShowInteractMessage();
             if (Input.GetKeyDown(KeyCode.F))

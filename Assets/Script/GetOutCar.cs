@@ -11,8 +11,8 @@ public class GetOutCar : MonoBehaviour
     public TextMeshProUGUI interactText;
     private Transform figlio2car;
     private Transform figlio2people;
-    public Level_Status_glacial Level_Status_glacial;
     public int ActualCheck;
+    public Level_Status_glacial Level_Status_glacial;
     public ThirdPersonController ThirdPersonController;
     public CinemachineVirtualCamera CinemachineVirtualCamera;
     
@@ -35,7 +35,7 @@ public class GetOutCar : MonoBehaviour
         float distanza = Vector3.Distance(transform.position, oggettoDaRaccogliere.transform.position);
         
         // Se il giocatore è abbastanza vicino, disattiva l'oggetto
-        if (distanza <= distanzaMassima && ActualCheck == Level_Status_glacial.NumCheck)
+        if (distanza <= distanzaMassima && figlio2car.gameObject.activeSelf && Level_Status_glacial.NumCheck == ActualCheck)
         {
             ShowInteractMessage();
             GetOut();
@@ -89,6 +89,7 @@ public class GetOutCar : MonoBehaviour
             ThirdPersonController.RotationSmoothTime = 0.12f;
             ThirdPersonController.JumpHeight = 1.2f;
             CinemachineVirtualCamera.m_Lens.FieldOfView = 40.0f;
+            ThirdPersonController.FootstepAudioVolume = 0.5f;
         }
     }
 }
