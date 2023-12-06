@@ -22,7 +22,7 @@ public class Conv_start_personalize : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        // Gestisci l'avvio della conversazione se il giocatore è nel trigger
+        // Gestisci l'avvio della conversazione se il giocatore Ã¨ nel trigger
         if (other.CompareTag("Player") && !conversationStarted)
         {
             if (Input.GetKeyDown(KeyCode.F))
