@@ -9,7 +9,8 @@ public class WaterInteractionGlacial : MonoBehaviour
     public Level_Status_glacial Level_Status_glacial; // Riferimento allo script LevelStatus
     private Animator animator; // Riferimento all'Animator del personaggio
     private CinemachineVirtualCamera playerFollowCamera;
-
+    public Timer Timer;
+    public float yDifference1;
     void Start()
     {
         Level_Status_glacial = GameObject.Find("Level_status").GetComponent<Level_Status_glacial>(); // Assicurati che il GameObject "Level_status" abbia lo script LevelStatus
@@ -25,13 +26,13 @@ public class WaterInteractionGlacial : MonoBehaviour
 
         if (water2 != null)
         {
-            float yDifference2 = transform.position.y - water2.transform.position.y;
+             float yDifference2 = transform.position.y - water2.transform.position.y;
             Debug.Log("Y Difference: " + yDifference2);
 
             if (yDifference2 < -0.1f && transform.position.z < divider.transform.position.z)
             {
                 Debug.Log("Teleport Condition Met");
-
+                Timer.ZeroTimer();
                 // Disattiva temporaneamente l'animazione del personaggio
                 animator.enabled = false;
                 DisableAllScripts();
@@ -48,13 +49,13 @@ public class WaterInteractionGlacial : MonoBehaviour
         }
         if (water1 != null)
         {
-            float yDifference1 = transform.position.y - water1.transform.position.y;
+            yDifference1 = transform.position.y - water1.transform.position.y;
             Debug.Log("Y Difference: " + yDifference1);
 
             if (yDifference1 < -0.01f && transform.position.z > divider.transform.position.z)
             {
                 Debug.Log("Teleport Condition Met");
-
+                Timer.ZeroTimer();
                 // Disattiva temporaneamente l'animazione del personaggio
                 animator.enabled = false;
                 DisableAllScripts();
@@ -68,6 +69,25 @@ public class WaterInteractionGlacial : MonoBehaviour
                 StartCoroutine(EnableAnimatorAfterDelay());
                 StartCoroutine(EnableAllScriptsAfterDelay(0.1f));
             }
+        }
+
+        if (Timer.death)
+        {
+            Debug.Log("Teleport Condition Met");
+
+            // Disattiva temporaneamente l'animazione del personaggio
+            animator.enabled = false;
+            DisableAllScripts();
+
+            // Teletrasporta il player al checkpoint
+            transform.position = Level_Status_glacial.Checkpoint;
+
+            TeleportCamera();
+
+            // Riattiva l'animazione dopo il teletrasporto (eventualmente dopo un breve ritardo)
+            StartCoroutine(EnableAnimatorAfterDelay());
+            StartCoroutine(EnableAllScriptsAfterDelay(0.1f));
+            Timer.death = false;
         }
     }
 

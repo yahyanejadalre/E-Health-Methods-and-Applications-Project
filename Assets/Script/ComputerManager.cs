@@ -23,9 +23,13 @@ public class ComputerManager : MonoBehaviour
         // Qui inserisci la logica per verificare quando avvicini l'oggetto desiderato
         float distanza = Vector3.Distance(transform.position, OggettoComputer.transform.position);
         
-        if (distanza <= distanzaMassima && Level_Status_glacial.NumCheck == 7)
+        if (distanza <= distanzaMassima && Level_Status_glacial.NumCheck == 7 && Input.GetKeyDown(KeyCode.F))
         {
             pannelloConTesto.SetActive(true);
+        }
+        else
+        {
+            pannelloConTesto.SetActive(false);
         }
     }
 }

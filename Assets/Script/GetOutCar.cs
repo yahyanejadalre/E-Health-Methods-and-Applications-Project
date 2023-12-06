@@ -11,6 +11,7 @@ public class GetOutCar : MonoBehaviour
     public TextMeshProUGUI interactText;
     private Transform figlio2car;
     private Transform figlio2people;
+    public Timer Timer;
     public int ActualCheck;
     public Level_Status_glacial Level_Status_glacial;
     public ThirdPersonController ThirdPersonController;
@@ -53,6 +54,10 @@ public class GetOutCar : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
+                if (Level_Status_glacial.timer_enable && Timer.timerActive)
+                {
+                    Timer.StopTimer();
+                }
                 Level_Status_glacial.NumCheck++;
                 Level_Status_glacial.ArrayLight[Level_Status_glacial.NumCheck - 1].SetActive(true);
                 HideInteractMessage();

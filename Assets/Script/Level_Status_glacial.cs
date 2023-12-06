@@ -13,6 +13,7 @@ public class Level_Status_glacial : MonoBehaviour
     public GameObject[] TriggersHouse;
     public GameObject[] TriggersScientist;
     public GameObject[] TriggersComputer;
+    public GameObject[] Audios;
     public int NumIce = 1;
     public bool timer_enable;
     public bool easy_mode;
@@ -55,11 +56,12 @@ public class Level_Status_glacial : MonoBehaviour
             young_men.SetActive(false);
             middle_age_women.SetActive(true);
         }
-        age = 3;
+        age = 7;
         cluster = 2;
         TriggersHouse[cluster - 1].SetActive(true);
         TriggersScientist[cluster - 1].SetActive(true);
         TriggersComputer[cluster - 1].SetActive(true);
+        Audios[cluster - 1].SetActive(true);
         if (age >= 35)
         {
             easy_mode = true;

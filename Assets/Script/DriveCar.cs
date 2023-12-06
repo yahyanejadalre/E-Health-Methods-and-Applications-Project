@@ -9,11 +9,13 @@ public class CarController : MonoBehaviour
 {
     public GameObject oggettoDaRaccogliere;
     public float distanzaMassima;
+    public Timer Timer;
     public TextMeshProUGUI interactText;
     private Transform figlio2car;
     private Transform figlio2people;
     public Level_Status_glacial Level_Status_glacial;
     public int ActualCheck;
+    public WaterInteractionGlacial WaterInteractionGlacial;
     public ThirdPersonController ThirdPersonController;
     public CinemachineVirtualCamera CinemachineVirtualCamera;
     
@@ -33,7 +35,7 @@ public class CarController : MonoBehaviour
     {
         // Trova la distanza tra il giocatore e l'oggetto
         float distanza = Vector3.Distance(transform.position, oggettoDaRaccogliere.transform.position);
-        
+     
         // Se il giocatore è abbastanza vicino, disattiva l'oggetto
         if (distanza <= distanzaMassima && figlio2people.gameObject.activeSelf && Level_Status_glacial.NumCheck == ActualCheck)
         {
@@ -53,6 +55,10 @@ public class CarController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
+                if (Level_Status_glacial.timer_enable)
+                {
+                    Timer.StartTimer(); 
+                }
                 Level_Status_glacial.NumCheck++;
                 Level_Status_glacial.ArrayLight[Level_Status_glacial.NumCheck - 1].SetActive(true);
                 HideInteractMessage();

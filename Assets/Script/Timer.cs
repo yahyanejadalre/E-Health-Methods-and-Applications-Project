@@ -5,16 +5,14 @@ using UnityEngine;
 public class Timer : MonoBehaviour
 {
     public float countdownTime = 5.0f; // Imposta il tempo di countdown desiderato in secondi
-    private float currentTime = 0.0f;
-    private bool timerActive = false;
+    public float currentTime = 0.0f;
+    public bool timerActive = false;
+    public bool death;
     public Level_Status_glacial Level_Status_glacial;
 
     void Start()
-    {
-        if (Level_Status_glacial.timer_enable)
-        {
-            StartTimer();
-        }
+    { 
+        death = false;
     }
 
     void Update()
@@ -38,9 +36,14 @@ public class Timer : MonoBehaviour
         timerActive = true;
     }
 
+    public void ZeroTimer()
+    {
+        // Riattiva il timer
+        currentTime = 0.0f;
+    }
     public void StopTimer()
     {
-        // Ferma il timer
+        // Stop il timer
         timerActive = false;
     }
 
@@ -48,6 +51,8 @@ public class Timer : MonoBehaviour
     {
         // Azioni da eseguire quando il tempo è scaduto
         Debug.Log("Tempo scaduto!");
+        death = true;
+        ZeroTimer();
         // Puoi aggiungere altre azioni qui, come cambiare scena o attivare/disattivare oggetti
     }
 }
