@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SustainableCityNew.unity
     guid: 18b837d058ac28d499a83672994a25f8
+  - enabled: 1
+    path: Assets/Scenes/Final scene.unity
+    guid: d9442d43d5badbc4abe07073af11520f
   m_configObjects: {}
