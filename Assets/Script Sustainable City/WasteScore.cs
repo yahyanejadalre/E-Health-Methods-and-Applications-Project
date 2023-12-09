@@ -6,6 +6,55 @@ using TMPro;
 public class wasteScore : MonoBehaviour
 {
     public int NumWasteObject = 0;
+    private GameObject playerObject;
+    public GameObject[] Audios;
+    public int cluster;
+    public static float improvement = 0;
+    public static float worsening = 0;
+    private string character;
+    public int age;
+    public GameObject middle_age_men;
+    public GameObject middle_age_women;
+    public GameObject young_men;
+    public GameObject young_women;
+    private GameObject Improvement;
+    private GameObject Worsening;
+    public GameObject[] TriggersCitizen;
+    public GameObject[] TriggersScientist;
+
+    void Start()
+    {
+        playerObject = GameObject.FindGameObjectWithTag("Player"); // Trova il GameObject del giocatore
+        character = MainMenu.character;
+        age = MainMenu.age;
+        cluster = CLUSTERING_ALL_SCENES.cluster;
+        Improvement = GameObject.Find("Improvement");
+        Worsening = GameObject.Find("Worsening");
+        if (character == "young man")
+        {
+            young_men.SetActive(true);
+        }
+        if (character == "young woman")
+        {
+            young_men.SetActive(false);
+            young_women.SetActive(true);
+        }
+        if (character == "middle aged man")
+        {
+            young_men.SetActive(false);
+            middle_age_men.SetActive(true);
+        }
+        if (character == "middle aged woman")
+        {
+            young_men.SetActive(false);
+            middle_age_women.SetActive(true);
+        }
+        age = 20;
+        cluster = 1;
+        TriggersCitizen[cluster - 1].SetActive(true);
+        TriggersScientist[cluster - 1].SetActive(true);
+        Audios[cluster - 1].SetActive(true);
+    }
 
     void Update()
     {
