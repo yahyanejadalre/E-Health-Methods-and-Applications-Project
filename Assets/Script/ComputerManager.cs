@@ -9,13 +9,12 @@ public class ComputerManager : MonoBehaviour
     public GameObject OggettoComputer;
     public Level_Status_glacial Level_Status_glacial;
     public int distanzaMassima;
-
+    public TextMeshProUGUI interactText;
 
     void Start()
     {
         pannelloConTesto.SetActive(false);
-        GameObject Canvas = GameObject.Find("ConversationCanvas");
-        Transform Panel = Canvas.transform.Find("PanelComputer");
+        HideInteractMessage();
     }
 
     void Update()
@@ -23,13 +22,35 @@ public class ComputerManager : MonoBehaviour
         // Qui inserisci la logica per verificare quando avvicini l'oggetto desiderato
         float distanza = Vector3.Distance(transform.position, OggettoComputer.transform.position);
         
-        if (distanza <= distanzaMassima && Level_Status_glacial.NumCheck == 7 && Input.GetKeyDown(KeyCode.F))
+        if (distanza <= distanzaMassima && Level_Status_glacial.NumCheck == 7)
         {
-            pannelloConTesto.SetActive(true);
+            ShowInteractMessage();
+            if(Input.GetKeyDown(KeyCode.F))
+            {
+                Level_Status_glacial.NumCheck++;
+                HideInteractMessage();
+                pannelloConTesto.SetActive(true);
+            }
+            
         }
-        else
+        else if (distanza > distanzaMassima)
         {
             pannelloConTesto.SetActive(false);
+        }
+    }
+    private void ShowInteractMessage()
+    {
+        if (interactText != null)
+        {
+            interactText.gameObject.SetActive(true);
+        }
+    }
+
+    private void HideInteractMessage()
+    {
+        if (interactText != null)
+        {
+            interactText.gameObject.SetActive(false);
         }
     }
 }
