@@ -11,6 +11,7 @@ public class CarController : MonoBehaviour
     public float distanzaMassima;
     public Timer Timer;
     public TextMeshProUGUI interactText;
+    public TextMeshProUGUI interactText2;
     private Transform figlio2car;
     private Transform figlio2people;
     public Level_Status_glacial Level_Status_glacial;
@@ -23,6 +24,7 @@ public class CarController : MonoBehaviour
     {
         // Assicura che il testo sia inizialmente nascosto all'avvio
         HideInteractMessage();
+        HideInteractMessage2();
         Transform figlio1 = transform.Find("Geometry");
         if (figlio1 != null)
         {
@@ -58,6 +60,7 @@ public class CarController : MonoBehaviour
                 if (Level_Status_glacial.timer_enable)
                 {
                     Timer.StartTimer(); 
+                    ShowInteractMessage2();
                 }
                 Level_Status_glacial.NumCheck++;
                 Level_Status_glacial.ArrayLight[Level_Status_glacial.NumCheck - 1].SetActive(true);
@@ -75,6 +78,13 @@ public class CarController : MonoBehaviour
             interactText.gameObject.SetActive(true);
         }
     }
+    private void ShowInteractMessage2()
+    {
+        if (interactText2 != null)
+        {
+            interactText2.gameObject.SetActive(true);
+        }
+    }
     
     private void HideInteractMessage()
     {
@@ -83,14 +93,21 @@ public class CarController : MonoBehaviour
             interactText.gameObject.SetActive(false);
         }
     }
+    private void HideInteractMessage2()
+    {
+        if (interactText2 != null)
+        {
+            interactText2.gameObject.SetActive(false);
+        }
+    }
     public void ActiveCar()
     {
         if (figlio2car != null)
         {
             figlio2car.gameObject.SetActive(true);
             figlio2people.gameObject.SetActive(false);
-            ThirdPersonController.MoveSpeed = 5.0f;
-            ThirdPersonController.SprintSpeed = 12.5f;
+            ThirdPersonController.MoveSpeed = 4.0f;
+            ThirdPersonController.SprintSpeed = 8.5f;
             ThirdPersonController.RotationSmoothTime = 0.27f;
             ThirdPersonController.JumpHeight = 0f;
             CinemachineVirtualCamera.m_Lens.FieldOfView = 70.0f;

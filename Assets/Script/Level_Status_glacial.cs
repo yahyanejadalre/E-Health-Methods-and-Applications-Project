@@ -12,7 +12,7 @@ public class Level_Status_glacial : MonoBehaviour
     public GameObject[] ArrayLight;
     public GameObject[] TriggersHouse;
     public GameObject[] TriggersScientist;
-    public GameObject[] TriggersComputer;
+    public GameObject[] TriggersFinal;
     public GameObject[] Audios;
     public int NumIce = 1;
     public bool timer_enable;
@@ -60,7 +60,7 @@ public class Level_Status_glacial : MonoBehaviour
         cluster = 2;
         TriggersHouse[cluster - 1].SetActive(true);
         TriggersScientist[cluster - 1].SetActive(true);
-        TriggersComputer[cluster - 1].SetActive(true);
+        TriggersFinal[cluster - 1].SetActive(true);
         Audios[cluster - 1].SetActive(true);
         if (age >= 35)
         {

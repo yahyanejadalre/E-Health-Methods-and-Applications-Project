@@ -9,6 +9,7 @@ public class GetOutCar : MonoBehaviour
     public GameObject carSecond;
     public float distanzaMassima;
     public TextMeshProUGUI interactText;
+    public TextMeshProUGUI interactText2;
     private Transform figlio2car;
     private Transform figlio2people;
     public Timer Timer;
@@ -57,6 +58,7 @@ public class GetOutCar : MonoBehaviour
                 if (Level_Status_glacial.timer_enable && Timer.timerActive)
                 {
                     Timer.StopTimer();
+                    HideInteractMessage2();
                 }
                 Level_Status_glacial.NumCheck++;
                 Level_Status_glacial.ArrayLight[Level_Status_glacial.NumCheck - 1].SetActive(true);
@@ -80,6 +82,13 @@ public class GetOutCar : MonoBehaviour
         if (interactText != null)
         {
             interactText.gameObject.SetActive(false);
+        }
+    }
+    private void HideInteractMessage2()
+    {
+        if (interactText2 != null)
+        {
+            interactText2.gameObject.SetActive(false);
         }
     }
     public void DisactiveCar()
