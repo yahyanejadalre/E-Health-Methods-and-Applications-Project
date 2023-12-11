@@ -291,7 +291,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentIDCounter: 36
   json: '{"Options":[],"Parameters":[{"__type":"EditableIntParameter:#DialogueEditor","ParameterName":"New
-    int","IntValue":0}],"SpeechNodes":[{"Connections":[],"EditorInfo":{"isRoot":true,"xPos":-65,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    int","IntValue":0}],"SpeechNodes":[{"Connections":[],"EditorInfo":{"isRoot":true,"xPos":206.666687,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"I
     am worried about how you''ve approached this experience. You still have the chance
     to modify the destiny of the world, so in the future,  I hope you could really
     contribute for the wellness of the planet.","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
@@ -12780,7 +12780,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanzaRilevamento: 1
   interactText: {fileID: 1626496006}
-  tagPersonaggioPrincipale: Player
 --- !u!1001 &659675918
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14989,7 +14988,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanzaRilevamento: 1
   interactText: {fileID: 1626496006}
-  tagPersonaggioPrincipale: Player
 --- !u!1001 &780373015
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17658,7 +17656,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanzaRilevamento: 1
   interactText: {fileID: 1626496006}
-  tagPersonaggioPrincipale: Player
 --- !u!1001 &921744317
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18294,7 +18291,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanzaRilevamento: 1
   interactText: {fileID: 1626496006}
-  tagPersonaggioPrincipale: Player
 --- !u!1001 &970730631
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18759,7 +18755,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanzaRilevamento: 1
   interactText: {fileID: 1626496006}
-  tagPersonaggioPrincipale: Player
 --- !u!1001 &991745891
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21812,7 +21807,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanzaRilevamento: 1
   interactText: {fileID: 1626496006}
-  tagPersonaggioPrincipale: Player
 --- !u!1001 &1153784845
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24247,6 +24241,7 @@ MonoBehaviour:
   middle_age_man: {fileID: 1038137817}
   middle_age_woman: {fileID: 326664505}
   young_age_man: {fileID: 1395491063}
+  oooo: {fileID: 0}
   young_age_woman: {fileID: 1403602069}
 --- !u!4 &1303098681
 Transform:
@@ -27100,6 +27095,7 @@ MonoBehaviour:
   middle_age_man: {fileID: 1038137817}
   middle_age_woman: {fileID: 326664505}
   young_age_man: {fileID: 1395491063}
+  oooo: {fileID: 0}
   young_age_woman: {fileID: 1520739320}
 --- !u!1001 &1473173360
 PrefabInstance:
@@ -27396,7 +27392,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentIDCounter: 36
   json: '{"Options":[],"Parameters":[{"__type":"EditableIntParameter:#DialogueEditor","ParameterName":"New
-    int","IntValue":0}],"SpeechNodes":[{"Connections":[],"EditorInfo":{"isRoot":true,"xPos":41,"yPos":43},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"I
+    int","IntValue":0}],"SpeechNodes":[{"Connections":[],"EditorInfo":{"isRoot":true,"xPos":107,"yPos":65.9999847},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"I
     am very glad to know that you are someone sensitive to climate change but at
     the same time aware that a solution in your world can be found. I hope that with
     this experience, you can continue to have a positive attitude for the wellness
@@ -29176,7 +29172,7 @@ MonoBehaviour:
         m_CallState: 2
   NodeID: 0
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 93ee2b8bfa3e42f46b950bc642d0310a, type: 3}
   Audio: {fileID: 0}
 --- !u!4 &1551479459
 Transform:
@@ -31042,7 +31038,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanzaRilevamento: 1
   interactText: {fileID: 1626496006}
-  tagPersonaggioPrincipale: Player
 --- !u!1001 &1633355705
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34501,7 +34496,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanzaRilevamento: 1
   interactText: {fileID: 1626496006}
-  tagPersonaggioPrincipale: Player
 --- !u!1001 &1823527724
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38096,7 +38090,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanzaRilevamento: 1
   interactText: {fileID: 1626496006}
-  tagPersonaggioPrincipale: Player
 --- !u!1001 &1980612858
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39618,7 +39611,7 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 0
   TMPFont: {fileID: 0}
-  Icon: {fileID: 0}
+  Icon: {fileID: 21300000, guid: 93ee2b8bfa3e42f46b950bc642d0310a, type: 3}
   Audio: {fileID: 0}
 --- !u!1001 &2064113050
 PrefabInstance:
