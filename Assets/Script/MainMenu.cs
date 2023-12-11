@@ -32,6 +32,7 @@ public class MainMenu : MonoBehaviour
     public TMP_InputField AgeInputFied;
     public Toggle maleToggle;
     public Toggle femaleToggle;
+    public Toggle otherToggle;
     public static string name="";
     public static string character = "";
     public static int age=0;
@@ -44,6 +45,9 @@ public class MainMenu : MonoBehaviour
         }
         if(femaleToggle.isOn){
             genderWithToggle="female";
+        }
+        if(otherToggle.isOn){
+            genderWithToggle="other";
         }
         if (int.Parse(AgeInputFied.text) < 50 && maleToggle.isOn)
         {
@@ -60,6 +64,14 @@ public class MainMenu : MonoBehaviour
         else if (int.Parse(AgeInputFied.text) > 50 && femaleToggle.isOn)
         {
             character = "middle aged woman";
+        }
+        else if (int.Parse(AgeInputFied.text) < 50 && otherToggle.isOn)
+        {
+            character = "young other";
+        }
+        else if (int.Parse(AgeInputFied.text) > 50 && otherToggle.isOn)
+        {
+            character = "middle aged other";
         }
         else
         {
