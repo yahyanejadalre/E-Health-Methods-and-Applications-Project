@@ -14,6 +14,8 @@ public class levelStatus : MonoBehaviour
     private GameObject Easy_mode;
     private GameObject Improvement;
     private GameObject Worsening;
+    public GameObject[] AudioArray;
+
     public bool updated = false;
     public bool collect_enable = false;
 
@@ -39,6 +41,8 @@ public class levelStatus : MonoBehaviour
         Improvement = GameObject.Find("Improvement");
         Worsening = GameObject.Find("Worsening");
         cluster = CLUSTERING_ALL_SCENES.cluster;
+
+        AudioArray[cluster - 1].SetActive(true);
 
         //character = "young woman";
 
