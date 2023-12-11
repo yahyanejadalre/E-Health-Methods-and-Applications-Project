@@ -12574,14 +12574,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 655891604}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8d85e5ceb3d65a34db77a6ca1906796b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   distanzaRilevamento: 1
   interactText: {fileID: 1626496006}
-  tagPersonaggioPrincipale: Player
 --- !u!1001 &659675918
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14790,7 +14789,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanzaRilevamento: 1
   interactText: {fileID: 1626496006}
-  tagPersonaggioPrincipale: Player
 --- !u!1001 &780373015
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17428,7 +17426,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanzaRilevamento: 1
   interactText: {fileID: 1626496006}
-  tagPersonaggioPrincipale: Player
 --- !u!1001 &921744317
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18064,7 +18061,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanzaRilevamento: 1
   interactText: {fileID: 1626496006}
-  tagPersonaggioPrincipale: Player
 --- !u!1001 &970730631
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18529,7 +18525,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanzaRilevamento: 1
   interactText: {fileID: 1626496006}
-  tagPersonaggioPrincipale: Player
 --- !u!1001 &991745891
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21582,7 +21577,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanzaRilevamento: 1
   interactText: {fileID: 1626496006}
-  tagPersonaggioPrincipale: Player
 --- !u!1001 &1153784845
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26592,6 +26586,7 @@ GameObject:
   - component: {fileID: 1472939054}
   - component: {fileID: 1472939053}
   - component: {fileID: 1472939060}
+  - component: {fileID: 1472939061}
   m_Layer: 8
   m_Name: PlayerArmature
   m_TagString: Player
@@ -26880,6 +26875,28 @@ MonoBehaviour:
   young_age_man: {fileID: 1395491063}
   oooo: {fileID: 0}
   young_age_woman: {fileID: 1520739320}
+--- !u!114 &1472939061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472939050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9989251f383fda941a6bea141a7e8b06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  porta1: {fileID: 557249380}
+  porta2: {fileID: 699801623}
+  porta3: {fileID: 655891604}
+  porta4: {fileID: 212423762}
+  porta5: {fileID: 776564704}
+  porta6: {fileID: 776564704}
+  porta7: {fileID: 1339941240}
+  personaggio: {fileID: 1552562150}
+  distanzaMassima: 1
+  interactText: {fileID: 1626496006}
 --- !u!1001 &1473173360
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29044,6 +29061,7 @@ GameObject:
   - component: {fileID: 1552562158}
   - component: {fileID: 1552562152}
   - component: {fileID: 1552562151}
+  - component: {fileID: 1552562160}
   m_Layer: 8
   m_Name: PlayerArmature (1)
   m_TagString: Untagged
@@ -29123,6 +29141,20 @@ Transform:
   - {fileID: 197689162}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -212.615, z: 0}
+--- !u!114 &1552562160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552562150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70294a3e6829f6c468f2acc91b8c16fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanzaRilevamento: 2
+  interactText: {fileID: 1626496006}
 --- !u!1001 &1563654126
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30614,7 +30646,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanzaRilevamento: 1
   interactText: {fileID: 1626496006}
-  tagPersonaggioPrincipale: Player
 --- !u!1001 &1633355705
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34117,7 +34148,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanzaRilevamento: 1
   interactText: {fileID: 1626496006}
-  tagPersonaggioPrincipale: Player
 --- !u!1001 &1823527724
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37292,6 +37322,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 197689162}
     m_Modifications:
+    - target: {fileID: 109526, guid: 48b470c6a762f60438c631f219257520, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 137502, guid: 48b470c6a762f60438c631f219257520, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -37712,7 +37746,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanzaRilevamento: 1
   interactText: {fileID: 1626496006}
-  tagPersonaggioPrincipale: Player
 --- !u!1001 &1980612858
 PrefabInstance:
   m_ObjectHideFlags: 0

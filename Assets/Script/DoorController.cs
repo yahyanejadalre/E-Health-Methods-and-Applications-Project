@@ -5,9 +5,9 @@ using TMPro;
 
 public class DoorController : MonoBehaviour
 {
-    public float distanzaRilevamento = 2f; // Distanza a cui si attiverà l'apertura
+    public float distanzaRilevamento; // Distanza a cui si attiverà l'apertura
     public TextMeshProUGUI interactText;
-    public string tagPersonaggioPrincipale = "Player";
+    //public string tagPersonaggioPrincipale = "Player";
     private bool isDoorOpen = false;
         
     private void Start()
@@ -20,7 +20,7 @@ public class DoorController : MonoBehaviour
     {
         if (IsPlayerNear())
         {
-            ShowInteractMessage();
+            //ShowInteractMessage();
             if (Input.GetKeyDown(KeyCode.F))
             {
                 // Inverte lo stato della porta (aperta o chiusa)
@@ -34,7 +34,7 @@ public class DoorController : MonoBehaviour
         }
         else
         {
-            HideInteractMessage();    
+                
         }
 
     }
