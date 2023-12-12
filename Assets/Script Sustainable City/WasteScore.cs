@@ -49,7 +49,7 @@ public class WasteScore : MonoBehaviour
             young_men.SetActive(false);
             middle_age_women.SetActive(true);
         }
-
+        
         TriggersCitizen[cluster - 1].SetActive(true);
         TriggersScientist[cluster - 1].SetActive(true);
         Audios[cluster - 1].SetActive(true);
