@@ -8,7 +8,7 @@ public class WasteSeparation_new : MonoBehaviour
     WasteObject oggettoRaccolto;
     public int tipoCassonetto;
     private GameObject wasteScoreObject;
-    private wasteScore wasteScore;
+    private WasteScore wasteScore;
     private GameObject canvasObject;
     private TextMeshProUGUI textComponent;
 
@@ -17,7 +17,7 @@ public class WasteSeparation_new : MonoBehaviour
         wasteScoreObject = GameObject.Find("WasteScore");
         if (wasteScoreObject != null)
         {
-            wasteScore = wasteScoreObject.GetComponent<wasteScore>();
+            wasteScore = wasteScoreObject.GetComponent<WasteScore>();
         }
 
         canvasObject = GameObject.Find("Canvas");

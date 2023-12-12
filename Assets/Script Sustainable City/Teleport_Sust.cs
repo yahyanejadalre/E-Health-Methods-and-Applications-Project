@@ -9,7 +9,7 @@ public class Teleport_Sust : MonoBehaviour
     public GameObject Scientist;
     public float distanzaMassima;
     public TextMeshProUGUI interactText;
-    public wasteScore wasteScore;
+    public WasteScore WasteScore;
 
     void Start()
     {
@@ -33,7 +33,7 @@ public class Teleport_Sust : MonoBehaviour
 
     void EndScene()
     {
-        if (Scientist != null && Scientist.activeSelf && wasteScore.NumWasteObject == 12)
+        if (Scientist != null && Scientist.activeSelf && WasteScore.NumWasteObject == 12)
         {
             ShowInteractMessage();
             if (Input.GetKeyDown(KeyCode.F))

@@ -73,6 +73,8 @@ public class RaccoltaRifiuto : MonoBehaviour
                 {
                     textComponent.gameObject.SetActive(false);
                 }
+                // Disattiva l'oggetto associato allo script
+                gameObject.SetActive(false);
             }
         }
     }

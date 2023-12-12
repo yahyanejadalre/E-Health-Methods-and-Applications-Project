@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class wasteScore : MonoBehaviour
+public class WasteScore : MonoBehaviour
 {
     public int NumWasteObject = 0;
     private GameObject playerObject;
@@ -49,8 +49,7 @@ public class wasteScore : MonoBehaviour
             young_men.SetActive(false);
             middle_age_women.SetActive(true);
         }
-        age = 20;
-        cluster = 1;
+
         TriggersCitizen[cluster - 1].SetActive(true);
         TriggersScientist[cluster - 1].SetActive(true);
         Audios[cluster - 1].SetActive(true);
