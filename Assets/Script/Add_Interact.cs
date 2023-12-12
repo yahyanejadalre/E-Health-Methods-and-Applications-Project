@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using DialogueEditor;
+
 
 public class Add_Interact : MonoBehaviour
 {   
@@ -16,6 +18,7 @@ public class Add_Interact : MonoBehaviour
     
     public float distanzaMassima;
     public TextMeshProUGUI interactText;
+    private int flag = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,7 +39,11 @@ public class Add_Interact : MonoBehaviour
 
         if (distanza1 <= distanzaMassima || distanza2 <= distanzaMassima || distanza3 <= distanzaMassima ||
             distanza4 <= distanzaMassima || distanza5 <= distanzaMassima || distanza6 <= distanzaMassima ||
-            distanza7 <= distanzaMassima || distanza8 <= distanzaMassima)
+            distanza7 <= distanzaMassima)
+        {
+            ShowInteractMessage();
+        }
+        else if(distanza8 <= distanzaMassima && flag == 0)
         {
             ShowInteractMessage();
         }
@@ -44,6 +51,24 @@ public class Add_Interact : MonoBehaviour
         {
             HideInteractMessage();
         }
+    }
+    
+    private void OnEnable()
+    {
+        ConversationManager.OnConversationStarted += ConversationStart;
+
+    }
+    
+    private void OnDisable()
+    {
+        ConversationManager.OnConversationStarted -= ConversationStart;
+
+    }
+    
+    private void ConversationStart()
+    {
+        Debug.Log("A conversation has begun.");
+        flag = 1;
     }
     
     private void ShowInteractMessage()
@@ -61,4 +86,5 @@ public class Add_Interact : MonoBehaviour
             interactText.gameObject.SetActive(false);
         }
     }
+
 }
