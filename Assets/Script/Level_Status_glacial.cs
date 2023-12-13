@@ -56,13 +56,11 @@ public class Level_Status_glacial : MonoBehaviour
             young_men.SetActive(false);
             middle_age_women.SetActive(true);
         }
-        age = 7;
-        cluster = 2;
         TriggersHouse[cluster - 1].SetActive(true);
         TriggersScientist[cluster - 1].SetActive(true);
         TriggersFinal[cluster - 1].SetActive(true);
         Audios[cluster - 1].SetActive(true);
-        if (age >= 35)
+        if (age >= 45)
         {
             easy_mode = true;
             timer_enable = false;

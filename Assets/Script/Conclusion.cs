@@ -14,6 +14,7 @@ public class Conclusion : MonoBehaviour
     private float improvement = 0;
     private float worsening = 0;
     private float difference = 0;
+    public GameObject[] Audios;
     
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,7 @@ public class Conclusion : MonoBehaviour
         worsening = levelStatus.worsening + Level_Status_glacial.worsening;
         difference = improvement - worsening;
         cluster = CLUSTERING_ALL_SCENES.cluster;
+        Audios[cluster - 1].SetActive(true);
         if (difference > 5)
         {
             improved = true;
