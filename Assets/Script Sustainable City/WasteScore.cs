@@ -50,9 +50,9 @@ public class WasteScore : MonoBehaviour
             middle_age_women.SetActive(true);
         }
         
-        TriggersCitizen[cluster - 1].SetActive(true);
-        TriggersScientist[cluster - 1].SetActive(true);
-        Audios[cluster - 1].SetActive(true);
+        TriggersCitizen[cluster].SetActive(true);
+        TriggersScientist[cluster].SetActive(true);
+        Audios[cluster].SetActive(true);
     }
 
     void Update()

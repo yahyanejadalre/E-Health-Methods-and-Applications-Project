@@ -42,7 +42,7 @@ public class levelStatus : MonoBehaviour
         Worsening = GameObject.Find("Worsening");
         cluster = CLUSTERING_ALL_SCENES.cluster;
 
-        AudioArray[cluster - 1].SetActive(true);
+        AudioArray[cluster].SetActive(true);
 
         //character = "young woman";
 

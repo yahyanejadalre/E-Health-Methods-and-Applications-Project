@@ -16,8 +16,7 @@ public class Conv_start_personalize : MonoBehaviour
     void Start()
     {
         cluster = CLUSTERING_ALL_SCENES.cluster;
-
-        cluster = 3;
+        
     }
 
     private void OnTriggerStay(Collider other)
@@ -27,17 +26,17 @@ public class Conv_start_personalize : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
-                if (cluster == 1)
+                if (cluster == 0)
                 {
                     ConversationManager.Instance.StartConversation(Conversation_Anxious);
                     conversationStarted = true;
                 }
-                else if (cluster == 2)
+                else if (cluster == 1)
                 {
                     ConversationManager.Instance.StartConversation(Conversation_Normal);
                     conversationStarted = true;
                 }
-                else if (cluster == 3)
+                else if (cluster == 2)
                 {
                     ConversationManager.Instance.StartConversation(Conversation_Sceptical);
                     conversationStarted = true;

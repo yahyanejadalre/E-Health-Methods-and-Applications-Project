@@ -43,6 +43,7 @@ public class Conclusion : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.F))
             {
+                Invoke("CloseGame", 120f);
                 if (improved || cluster == 1)
                 {
                     ConversationManager.Instance.StartConversation(Conversation_Improved);
@@ -57,7 +58,19 @@ public class Conclusion : MonoBehaviour
             }
         }
     }
+    
 
+    void CloseGame()
+    {
+        // Chiudiamo l'applicazione
+        Application.Quit();
+
+        // Questo blocco di codice è necessario solo quando si esegue il gioco nell'editor di Unity
+    #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+    #endif
+    }
+    
     // Update is called once per frame
     void Update()
     {
