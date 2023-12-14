@@ -7,35 +7,18 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-[System.Serializable]
-public class Person
-{
-    public string name;
-    public string gender;
-    public int age;
-    public string character;
-
-    public Person(string name, string gender, int age, string character)
-    {
-        this.name = name;
-        this.gender = gender;
-        this.age = age;
-        this.character = character;
-    }
-}
 
 public class MainMenu : MonoBehaviour
 {
     public static MainMenu mainMenu;
     public TMP_InputField NameInputFied;
-    public TMP_InputField GenderInputFied;
     public TMP_InputField AgeInputFied;
     public Toggle maleToggle;
     public Toggle femaleToggle;
     public Toggle otherToggle;
     public static string name="";
     public static string character = "";
-    public static int age=0;
+    public static int age = 0;
     public static string gender="";
     public void PlayGame()
     {
@@ -80,8 +63,6 @@ public class MainMenu : MonoBehaviour
         name=NameInputFied.text;
         age=int.Parse(AgeInputFied.text);
         gender=genderWithToggle;
-        int AgeInputNumber = int.Parse(AgeInputFied.text);
-        var NewPerson = new Person(NameInputFied.text,genderWithToggle,AgeInputNumber,character);
         print("name is " + name);
         print("gender is " + gender);
         print("age is "+ age);
