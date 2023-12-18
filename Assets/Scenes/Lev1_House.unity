@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44429672, g: 0.49375337, b: 0.5731194, a: 1}
+  m_IndirectSpecularColor: {r: 0.44429716, g: 0.49375373, b: 0.5731202, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11705,7 +11705,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1357445559844659729, guid: e5f53f3e0e1518c4c9ec3be6d16f67b5, type: 3}
       propertyPath: m_Name
-      value: Door_05 (1)
+      value: Door_05_exit
       objectReference: {fileID: 0}
     - target: {fileID: 1357445559845092913, guid: e5f53f3e0e1518c4c9ec3be6d16f67b5, type: 3}
       propertyPath: m_RootOrder
@@ -11754,10 +11754,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1357445559844659729, guid: e5f53f3e0e1518c4c9ec3be6d16f67b5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 655891608}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5f53f3e0e1518c4c9ec3be6d16f67b5, type: 3}
 --- !u!4 &602080602 stripped
 Transform:
@@ -12562,25 +12559,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5647530339594464023, guid: 0fd147cfcb300c14383d6ea56435a430, type: 3}
   m_PrefabInstance: {fileID: 654976195}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &655891604 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1357445559844659729, guid: e5f53f3e0e1518c4c9ec3be6d16f67b5, type: 3}
-  m_PrefabInstance: {fileID: 602080601}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &655891608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 655891604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d85e5ceb3d65a34db77a6ca1906796b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distanzaRilevamento: 1
-  interactText: {fileID: 1626496006}
 --- !u!1001 &659675918
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17353,7 +17331,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1357445559844659729, guid: e5f53f3e0e1518c4c9ec3be6d16f67b5, type: 3}
       propertyPath: m_Name
-      value: Door_05 (2)
+      value: Door_right
       objectReference: {fileID: 0}
     - target: {fileID: 1357445559845092913, guid: e5f53f3e0e1518c4c9ec3be6d16f67b5, type: 3}
       propertyPath: m_RootOrder
@@ -26889,7 +26867,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   porta1: {fileID: 557249380}
   porta2: {fileID: 699801623}
-  porta3: {fileID: 655891604}
+  porta3: {fileID: 263863065}
   porta4: {fileID: 212423762}
   porta5: {fileID: 776564704}
   porta6: {fileID: 776564704}
